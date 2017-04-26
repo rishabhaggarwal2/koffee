@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Koffee Reinvented | An Organic, Vegan, & Non-Acidic Espresso-Based Cold Brew Coffee Drink</title>
+        <meta name="description" content="Discover Koffee: the only stomach-friendly espresso drink that provides sustainable energy with significantly less crash. Try your first cup today!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Flexslider links/rels/scripts.-->
+        <!-- NOTE: the path must begin with the domain (http://koffeereinvented.com/) -->
+        <link rel="stylesheet" href="flexslider.css" type="text/css">
+        <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+                 $('.flexslider').flexslider({
+                  // Disable touch for mobile pausing. 06.07.16 edit
+                  touch: false,
+                  pauseOnAction: false
+                 });
+
+            });
+        </script>
+
+        <link rel="icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="main.css">
+        <!-- Sticky JS script 06.14.16 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.js"></script>
+        <!-- Try StickyjQuery for having the side bar 'follow' the window. -->
+
+        <!-- Sidr JS script + css for hamburger menu 06.09.16 -->
+        <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.light.min.css">
+
+        <style>
+        .modal-container {
+  margin: 0 auto;
+  padding-top: 60px;
+  position: relative;
+  max-width:300px;
+}
+
+.modal-container button {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  background: #6d5244;
+  font-size: 27px;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px -5px #333;
+  transition: background 0.3s ease-in;
+}
+
+.modal-container .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in;
+}
+
+.modal-container #modal-toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.modal-container #modal-toggle:hover ~ button { background: #8e7a70; }
+
+.modal-container #modal-toggle:checked {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  pointer-events: none;
+  opacity: 1;
+}
+
+  .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+    background-color: #6d5244;
+    max-width: 400px;
+    width: 734px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    width: 80%;
+
+     position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+}
+@media (max-width: 400px) {
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; }
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close {
+  color: #666;
+  position: absolute;
+  right: 2px;
+  top: 0;
+  padding-top: 7px;
+  background: #6d5244;
+  font-size: 16px;
+  width: 25px;
+  height: 28px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close.button {
+    top: initial;
+    bottom: 20px;
+    right: 20px;
+    background: #603d28;
+    color: #fff;
+    width: 128px;
+    height: 41px;
+    border-radius: 2px;
+    font-size: 29px;
+    font-weight: normal;
+}
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close.button:hover {
+  color: #fff;
+  background: #1E824C;
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { color: #333; }
+
+        /*Add this class to mobile-nav when scrolling*/
+        .navbar-fixed {
+          position: fixed;
+        }
+      #mobile-header {
+          display: none;
+          height: 0px;
+          position: fixed;
+          /*Moving hamburger icon slightly to the right and down.*/
+          top:20px;
+          left:10px;
+      }
+      #mobile-sidr {
+        display:none;
+        height: 0px;
+      }
+
+      /*Keep #sticky mobile_nav fixed to top of screen unless mobile*/
+      /*06.15.16*/
+      /*#sticky {*/
+        /*top: 0px !important;*/
+        /*position: fixed !important;*/
+      /*}*/
+      @media only screen and (max-width: 767px){
+          #mobile-header {
+              display: block;
+              height: 100px;
+          }
+          #welcome_image {
+            padding-top:200px;
+            min-height:300px;
+          }
+          #sidr-hide {
+            display: none;
+          }
+          header {
+            position: fixed;
+            height:60px;
+            background-image:url("images/white_bg_new.jpg");
+          }
+          #sidr-main {
+        background-image: url("images/white_bg_new.jpg");
+        }
+        #sidr-main ul a { border-bottom: 6px solid transparent; color: #5c4033; font-family: "Cabin Sketch",cursive; font-size: 21px; margin: 0 auto; max-width: 1053px; padding: 6px 0 0 0px; text-decoration: none; text-transform: uppercase; width: 100%; }
+        #sidr-main li {
+         float: none;
+        }
+        #sidr-id-logo-nav {
+          padding-left: 23% !important;
+        }
+        #sidr-id-sidr-logo {
+          padding-top: 15px;
+        }
+        #sidr-id-close-x {
+          padding-left: 50% !important;
+        }
+
+      }
+      </style>
+
+        <link href=''
+
+        <meta property="og:image" content="http://www.koffeereinvented.com/images/facebook_icon.jpg" />
+        <meta property="og:url" content="http://www.koffeereinvented.com" />
+        <meta property="og:title" content="Koffee Reinvented | An Organic, Vegan, & Non-Acidic Espresso-Based Cold Brew Coffee Drink" />
+        <meta property="og:description" content="Discover Koffee: the only stomach-friendly espresso drink that provides sustainable energy with significantly less crash. Try your first cup today!" />
+
+    </head>
+    <body>
+        <!--<div id="apply_popup">
+            <div id="apply_box">
+                <div id="apply">
+                    <div class="container">
+                        <h2>Online Store Coming Soon!</h2>
+                        <p>Enter Your Email Address<br>To Pre-Order Now!</p>
+                        <div id="contact_form">
+                            <form name="store" method="post" action="coming_soon.php">
+                                <input type="text" name="store_first_name" placeholder="First Name" class="contact_text">
+                                <input type="text" name="store_last_name" placeholder="Last Name" class="contact_text">
+                                <input type="email" name="store_email" placeholder="Email" class="contact_text">
+                                <input type="submit" value="" class="send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="close">
+                    <h1>Close</h1>
+                </div>
+            </div>
+        </div>-->
+
+        <header>
+
+        <!-- Hide this horizontal nav on @media max-width. -->
+        <div id="sidr-hide">
+
+            <div class="main_nav">
+                <div id="navigation">
+                    <ul>
+                        <li><p><a href="#our_story" id="iPad-nav" data-scroll data-options='{ "easing": "easeInQuint" }' >Kulture</a></p></li>
+                        <li><p><a href="#products" data-scroll data-options='{ "easing": "easeInQuint" }' >Products</a></p></li>
+                        <li><p><a href="#the_science" data-scroll data-options='{ "easing": "easeInQuint" }' >Science</a></p></li>
+                        <li><a href="#welcome" data-scroll data-options='{ "easing": "easeInQuint" }' ><div id="logo"></div></a></li>
+                        <li><p><a href="#the_beginning" data-scroll data-options='{ "easing": "easeInQuint" }' >Origin</a></p></li>
+                        <li><p><a href="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >Founder</a></p></li>
+                        <li><p><a href="#contact_us" data-scroll data-options='{ "easing": "easeInQuint" }' >Kontact</a></p></li>
+                        <!-- <li><p><a id="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >The Founder</a></p></li>
+                        <li><p><a id="#contact_us" data-scroll data-options='{ "easing": "easeInQuint" }' >Contact Us</a></p></li> -->
+                    </ul>
+                </div>
+            </div>
+          </div>
+
+          <div id="gray_edge"></div>
+            <!-- Sidr wraps the navbar 06.09.16 -->
+        <div id="mobile-header">
+            <a id="responsive-menu-button" href="#sidr-main"><img src="images/demo_hamburger.png" id = "Koffee Reinvented"></a>
+
+            <!-- Sidr mobile nav. -->
+            <div id="mobile-sidr">
+            <!-- Your Nested mobile menu. -->
+            <ul class="one">
+
+                        <!-- Adding a close button -->
+            <li><p><a href="#" id = "close-x" onclick="$.sidr('close', 'sidr-main');return false;">X</a></p></li>
+                        <li><p><a href="#our_story" id="iPad-nav" data-scroll data-options='{ "easing": "easeInQuint" }' >Kulture</a></p></li>
+                        <li><p><a href="#products" data-scroll data-options='{ "easing": "easeInQuint" }' >Products</a></p></li>
+                        <li><p><a href="#the_science" data-scroll data-options='{ "easing": "easeInQuint" }' >Science</a></p></li>
+                        <li><a href="#welcome" id ="logo-nav" data-scroll data-options='{ "easing": "easeInQuint" }' ><img id="sidr-logo" src="images/logo_sm_sm.jpg" alt = "Koffee Reinvented"></a></li>
+                        <li><p><a href="#the_beginning" data-scroll data-options='{ "easing": "easeInQuint" }' >Origin</a></p></li>
+                        <li><p><a href="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >Founder</a></p></li>
+                        <li><p><a href="#contact_us" data-scroll data-options='{ "easing": "easeInQuint" }' >Kontact</a></p></li>
+                    </ul>
+          </div>
+        </div>
+
+
+
+          <!-- Hide this horizontal nav on @media max-width. -->
+        <div id="sidr-hide">
+            <div class="mobile_nav" id = "sticky">
+            <!-- id="sticky" -->
+                <div id="navigation">
+                    <ul>
+                        <li><p><a href="#our_story" id="iPad-nav" data-scroll data-options='{ "easing": "easeInQuint" }' >Kulture</a></p></li>
+                        <li><p><a href="#products" data-scroll data-options='{ "easing": "easeInQuint" }' >Products</a></p></li>
+                        <li><p><a href="#the_science" data-scroll data-options='{ "easing": "easeInQuint" }' >Science</a></p></li>
+                        <li><a href="#welcome" data-scroll data-options='{ "easing": "easeInQuint" }' ><div id="logo_sm"></div></a></li>
+                        <li><p><a href="#the_beginning" data-scroll data-options='{ "easing": "easeInQuint" }' >Origin</a></p></li>
+                        <li><p><a href="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >Founder</a></p></li>
+                        <li><p><a href="#contact_us" data-scroll data-options='{ "easing": "easeInQuint" }' >Kontact</a></p></li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+
+        </header>
+
+<style>
+
+
+#our_story, #products, #the_science, #newsletter, #contact_us, #social  {
+    z-index: 0;
+}
+
+
+.location {
+  color:white;
+  text-align:left;
+  padding-bottom:7px;
+  margin: -49px 6px;
+}
+
+ul.biglist {
+
+  font-size:20px;
+  margin-top: 70px;
+}
+
+@media (max-width: 1070px) {
+li.location {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-top: -30px
+  }
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+
+    top: 17%;
+  }
+  .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+    background-color: #6d5244;
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    width: 80%;
+
+     position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+}
+
+
+}
+  @media (max-width: 760px) {
+li.location {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-top: -30px;
+    padding-left: 15px;
+  }
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+    background-color: #6d5244;
+    max-width: 400px;
+    width: 100%;
+    height: 790px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    width: 80%;
+     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+ @media (max-width: 560px) {
+li.location {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-top: 0px;
+    padding-left: 15px;
+    font-size: 15px;
+    padding-top: .5cm;
+  }
+  ul.biglist {
+    font-size: 20px;
+    margin-top: 0px;
+}
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+    background-color: #6d5244;
+    max-width: 400px;
+    width: 100%;
+    height: 560px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    width: 80%;
+     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+} @media (max-width: 375px) {
+li.location {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-top: 0px;
+    padding-left: 15px;
+    font-size: 11px;
+    padding-top: .4cm;
+  }
+  ul.biglist {
+    font-size: 20px;
+    margin-top: 0px;
+}
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+    background-color: #6d5244;
+    max-width: 400px;
+    width: 100%;
+    height: 460px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    width: 80%;
+     position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close.button {
+    top: initial;
+    bottom: 20px;
+    right: 20px;
+    background: #603d28;
+    color: #fff;
+    width: 57px;
+    height: 29px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: normal;
+}
+}
+
+header {
+    z-index: 0;
+}
+
+
+</style>
+<script>
+
+jQuery(function(){
+     setTimeout(function(){
+   $('#modal-toggle').click();
+ },4000);
+});
+</script>
+        <div id="welcome">
+            <div id="welcome_image">
+                <center><img src="images/welcome_image_new.png" width="100%" alt="Koffee Reinvented"></center>
+            </div>
+            <div style="clear: both;"></div>
+
+            <div id="welcome_text">
+            <div id="orange_edge"></div>
+                <p>We are changing the coffee game by reinventing both the recipe and the process. We are an all organic, fair trade and plant-based company, on a creatively innovative mission to make the world a better place. We are looking to lead the way as the forerunner of low acid, stomach friendly Koffee. Our unique cold-brew process concentrates more bold flavor and less acidity than your standard brew, while our restructured water brings alive the health benefits of coffee. It’s fun, portable sized bottle is a hit wherever it goes...and it fits just about anywhere!” </p>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="why_newsletter">
+            <div id="why">
+                <div id="why_koffee_icon"></div>
+                <h1>Why Koffee?</h1>
+                <p style="opacity: 0.4;">Our unique brewing process reduces acidity levels, leaving us with a product that not only provides sustainable energy, but is also much easier on the mind and the body, creating an overall more enjoyable experience!</p><p>         <div class="modal-container">
+                          <input id="modal-toggle" type="checkbox">
+                          <button id="modal">KOFFEE LOCATOR</button>
+                          <div class="modal-backdrop">
+                            <div class="modal-content">
+                              <label class="modal-close" for="modal-toggle">x</label>
+                              <h2 style="font-size:24px;opacity:1;color:white">Koffee Is Available Here:</h2>
+                              <hr />
+                              <ul class="biglist">
+                              <li class="location">
+                              Body Energy Club<br>
+                              6318 Hollywood Blvd<br>
+                              Los Angeles, CA 90028</p>
+                                                            </li>
+
+                              <li class="location">
+                              Life Food Organic<br>
+                              1507 Cahuenga Blvd<br>
+                              Los Angeles, CA 90028</p>
+                                                            </li>
+
+                              <li class="location">
+                              Love Baked Wings<br>
+                              7350 Melrose Ave<br>
+                              Los Angeles, CA 90046</p>
+                                                            </li>
+
+                              <li class="location">
+                              One Life Natural Foods<br>
+                              3001 Main Street <br>
+                              Santa Monica, CA 90405</p>
+                                                            </li>
+
+                              <li class="location">
+                              Pacific Coast Greens<br>
+                              22601 Pacific Coast Hwy,<br>
+                              Malibu, CA 90265</p>
+                                                            </li>
+
+                              <li class="location">
+                              Rainbow Acres<br>
+                              Waterside Shopping Ctr<br>
+                              4756 Admiralty Way<br>
+                              Marina del Rey, CA 90292</p>
+                                                            </li>
+
+                              <li class="location">
+                              RawBerri<br>
+                              8582 Santa Monica Blvd<br>
+                              West Hollywood, CA 90069</p>
+                                                            </li>
+</ul>
+                              <label class="modal-close button" for="modal-toggle">Close</label>
+                            </div>
+                          </div>
+                        </div>></span></p>
+
+                <div id="learn_more"></div>
+            </div>
+            <div id="newsletter" style = "background-size: cover;height: 523px;">
+                <div id="newsletter_icon"></div>
+                <!-- <h1>Newsletter</h1> -->
+                <!-- <p>Coming Soon</p> -->
+                <div id="subscribe"></div>
+            </div>
+        </div>
+        <div style="clear: both; font-color: #614126"></div>
+        <div id="our_story">
+            <h2>Kulture</h2>
+            <p>“<b>Culture</b>: Few drinks can claim a place in the creation of the English, American, French and Russian revolutions, but coffee can. Beyond activating the minds of revolutionaries, coffee drinking is highly social, and for centuries coffeehouse owners have tried to make their businesses centers of community life.”<br>
+<span>(Matthew Edlund, 2010)</span>
+        </div>
+        <div style="clear: both;"></div>
+
+        <div id="products">
+            <h2>Products</h2>
+            <div id="the_product_icons">
+                <div id="product_images_container">
+
+                <div class="hover">
+                <!-- <div id="iodized"> -->
+                    <center><a id = "product"><img id="jet_blak_off" src="images/koffee_jet_blak.jpg" alt = "Jet Blak"/><img id="jet_blak_hover" src="images/Koffee_ProductHover_JetBlak_060616_V2.jpg"/></a></center>
+                    <!-- <center><img src="images/koffee_blak_chocolate.jpg"></center> -->
+                        <!-- <ul class="hover_extra">
+                            <li>
+                                <div id="iodized_hover" class="the_science_icons_hover">
+                                <center><img src="images/iodized_logo.png"></center>
+                                <div id = "hide-scroll">
+                                <p style="overflow:hidden; max-height: 800px">The first commercial alkaline ionic water ionizers were available in Japan in l958. At first, only very large units were used in hospitals. In 1985, the household unit was introduced in the United States. Many scientific studies have been conducted to investigate just how drinking ionized water can give the consumer beneficial effects every day that they drink it. Alkaline ionized water is produced through the water electrolysis process that creates "restructured/reduced/micro-clustered water." This makes the water more readily available. It also raises PH value (note that anything greater than 7.0 can be considered alkaline water.)  Athletes use alkaline water with a high pH to counteract muscle fatigue caused by lactic acid build-up. Drinking ionized water also has demonstrated anti-aging effects as well as prevention of diseases such as cancer, diabetes, ulcers and arteriosclerosis. It has even found that an alkaline with a pH of 8.8 can be considered an adjunct in the treatment of acid reflux disease. According to the national heartburn alliance of the estimated 54 million Americans suffer from heartburn. 75% say Coffee causes it. . By cold-brewing coffee with alkaline water, you’re creating a less acidic and less harsh experience on the stomach. When we brew coffee with alkaline water, we are completely reinventing the coffee experience.</p>
+                                </div>
+                                <br>
+                                <center><p id="brought-to-you" style = "font-size: 16px, color: white">Brought to you by:</p></center>
+                                <p><center> <a href = "http://tyentusa.com/" target="_blank"><img src="images/tyent_new.png"></a></center></p>
+
+                                </div>
+                            </li>
+                        </ul> -->
+                    <!-- </div> -->
+                </div>
+
+                    <div class="hover" id = "blak-chocolate">
+                    <center><a id = "product"><img id="blak_chocolate_off" src="images/koffee_blak_chocolate.jpg" alt = "Blak Chocolate"/><img id="blak_chocolate_hover" src="images/Koffee_ProductHover_BlakChocolate_060716.jpg"/></a></center>
+                        <!-- <ul class="hover_extra">
+                            <li>
+                                <div id="cold_brewing_hover" class="the_science_icons_hover">
+                                    <center><img src="images/cold_brew_logo.png"></center>
+                                    <p>Cold Brewing is an ancient Peruvian process Todd Simpson brought it to America in 1964 from Peru. It is done by steeping coffee grounds for a extended a period of time vs. short bouts. In a nutshell, time replaces heat. Because hot water doesn't’t penetrate the coffee gournds, the acidic oils from the coffee bean are not released and transferred into the liquid mixture. This creates anywhere from 65% - 80% less acidity. Heat brewed coffee is usually at a PH of 5 or lower.  For every one ounce of coffee drink you would need to drink 20 ounces of water to completely neutralize acidity created in the body. Koffee strives to keep the pH between 6 & 8, which means our coffee ranges from minimally acidic, neutral or “pH balanced”, to slightly alkaline. Because acidity is connected to many degenerative illnesses, This means our low acid Koffee is easier on the stomach, joints and energy levels.</p>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+
+
+                    <div class="hover" id="kream-no-sugar">
+                        <center><a id = "product"><img id="kream_no_sugar_off" src="images/koffee_kream_no_sugar.jpg" alt = "Kream No Sugar"/>
+                        <img id="kream_no_sugar_hover" src="images/Koffee_ProductHover_KreamNoSugar_060616_V2.jpg"/></a></center>
+                    <!-- <center><img src="images/koffee_kream_no_sugar.jpg"></center> -->
+                        <!-- <ul class="hover_extra">
+                            <li>
+                                <div id="vegan_hover" class="the_science_icons_hover">
+                                    <center><img src="images/coconut.png"></center>
+                                    <p>We utilize a Coconut Milk creamer, which is dairy, soy, gluten and cholesterol free. Coconuts contain significant amounts of fat, but unlike other nuts, they provide fat that is mostly in the form of medium chain saturated fatty acids (MCFAs). MCFAs are rapidly metabolized into energy in the liver and because of this, tt is thought that unlike other saturated fats, MCFAs are used up more quickly by the body and are less likely to be stored as fat. MCFAs are also shown to be antiviral and antibacterial and can destroy a wide variety of disease causing organisms. Science has proven over and over again the benefits of drinking a plant-based milk over animal milks. On top of all the health benefits, comes the dramatically lighter carbon footprint left on earth’s environment. Plant milk is better for your body, your environment, and of course the peaceful cow.  </p>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+
+
+                    <div class="hover" id="koffee_vanilla_bean">
+                        <center><a id = "product"><img id="koffee_vanilla_bean_off" src="images/koffee_vanilla_bean.jpg" alt = "Vanilla Bean"/><img id="koffee_vanilla_bean_hover" src="images/Koffee_ProductHover_VanillaBean_060616_V2.jpg"/></a></center>
+                    <!-- <center><img src="images/koffee_vanilla_bean.jpg"></center> -->
+                        <!-- <ul class="hover_extra">
+                            <li>
+                                <div id="fair_trade_hover" class="the_science_icons_hover">
+                                    <center><img src="images/sugar_free_leaf.png"></center>
+                                    <p>Excess sugar adds unnecessary calories & creates a variety of terrible health issues. It’s bad for the teeth, hard on the liver, causes inflammation, cancer and creates insulin resistance, a stepping-stone towards diabetes. By reducing sugar content & replacing sugar with all natural, non-artificial sweeteners you both lower the calories and the unnecessary risks that come along with it. We replace sugar with the stevia plant which has zero calories, zero carbs, zero sugar and has zero impact on blood sugar level. It truly is guilt-free sweetness.</p>
+                                    <br>
+                                    <center><p id="brought-to-you" style = "font-size: 16px, color: white">Brought to you by:</p></center>
+                                    <p><center> <a href ="http://sweetleaf.com" target="_blank"><img src="images/sweetleaf.png"></a></center></p>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+
+
+                    <div class="hover" id="chai-pie">
+                        <center><a id = "product"><img id="chai-pie_off" src="images/koffee_chai_pie.jpg" alt = "Chai Pie"/><img id="chai-pie_hover" src="images/Koffee_ProductHover_ChaiPie_060616_V2.jpg"/></a></center>
+                    <!-- <center><img src="images/koffee_chai_pie.jpg"></center> -->
+                        <!-- <ul class="hover_extra">
+                            <li>
+                                <div id="rainforest_hover" class="the_science_icons_hover">
+                                    <center><img src="images/organic_logo.png"></center>
+                                    <p>Next to tobacco, coffee is sprayed with more chemicals than any other product consumed by humans. Coffee is one of the largest and most important crops in the world, worth roughly $16.5 billion in the United States alone. Organic coffee only accounts for 6.6% of the world’s harvest though. We are without a doubt living in one of the most toxic times in human history. It is more important now than ever to choose a path of health and pay close attention n to what is in our foods so we know what’s going into our bodies. Amongst the greatest threats to our human health is the chemicals sprayed on our food. Pesticides have been linked to a number of health problems, including neurologic and endocrine (hormone) system disorders, birth defects, cancer, and other diseases. By ditching conventionally grown foods.</p>
+                                    <br>
+                                    <center><p id="brought-to-you" style = "font-size: 16px, color: white">Brought to you by:</p></center>
+                                    <p><center><a href = "https://www.ccof.org/" target="_blank"><img src="images/ccof_new.png"></a></center></p>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+
+
+                    <div class="hover" id="mint_mocha">
+                        <center><a id = "product"><img id="mint_mocha_off" src="images/koffee_mint_mocha.jpg" alt = "Mint Mocha"/><img id="mint_mocha_hover" src="images/Koffee_ProductHover_MintMocha_060616_V2.jpg"/></a></center>
+                    <!-- <center><img src="images/koffee_mint_mocha.jpg"></center> -->
+                        <!-- <ul class="hover_extra" style="margin-left: 6px">
+                            <li>
+                                <div id="shade_grown_hover" class="the_science_icons_hover">
+                                    <center><img src="images/fair_trade_logo.png"></center>
+                                    <p>FAIR TRADE  - Fair Trade  coffee empowers farmers to get a fair price for their harvest, helps workers create safe working conditions, provides a decent living wage and guarantees the right to organize. Through direct, equitable trade, farming and working families are able to eat better, keep their kids in school, improve health and housing, and invest in the future. Keeping families, local economies, the natural environment, and the larger community strong today and for generations to come; these are the results that are sought out through Fair Trade.</p>
+                                    <br>
+                                    <center><p id="brought-to-you" style = "font-size: 16px, color: white">Our beans are certified<br>Fair Trade by:</p></center>
+
+                                    <p><center><a href = "http://fairtradeusa.org/" target="_blank"><img src = "images/fair_trade_certified_new.png"></a></center></p>
+                                    <p>SHADE GROWN - Traditionally, all coffee was shade grown. As the coffee beans mature more slowly in the shade, natural sugars increase and enhance the flavor of the coffee. Shade grown coffee is most often organically grown, free of chemical use. Shade grown coffee requires little or no chemical fertilizers, pesticides or herbicides. The shade trees also filter carbon dioxide which causes global warming, and aid in soil moisture retention which minimizes erosion. Shade grown coffee is not only better for the environment, but also for earths creatures. Migrating bird populations have been in rapid decline since the introduction of "sun" coffee and the consequent destruction of rainforest for more coffee plantations. As many as 150 species of birds have been identified on shade coffee farms. Shade coffee farms are, for the most part, organic and sustainable.</p>
+                                    <p><center><img src = "images/shade_grown_new.png"></a></center></p>
+                                    <br>
+                                    <p>RAINFOREST ALLIANCE CERTIFIED – The Rainforest Alliance certified seal assures consumers that the product they are purchasing has been grown and harvested using environmentally and socially responsible practices. Farms and forestlands that meet the rigorous, third-party standards of the Sustainable Agriculture Network or the Forest Stewardship Council are awarded the Rainforest Alliance Certified seal.</p>
+                                    <p><center><a href = "http://www.rainforest-alliance.org/" target="_blank"><img src = "images/rainforest_alliance_new.png"></a></center></p>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div style="clear: both;"></div>
+
+        <!-- The Science, under Products -->
+        <div id="the_science">
+            <h2>Science</h2>
+            <div id="the_science_icons">
+                <div id="the_science_icon_container">
+
+                <div class="hover">
+                <!-- <div id="iodized"> -->
+                    <center><img src="images/iodized.png" alt = "Iodized/Alkaline Water"></center>
+                        <ul class="hover_extra">
+                            <li>
+                                <div id="iodized_hover" class="the_science_icons_hover">
+                                <center><img src="images/iodized_logo.png"></center>
+                                <div id = "hide-scroll">
+                                <p>The first commercial alkaline ionic water ionizers were available in Japan in l958. At first, only very large units were used in hospitals. In 1985, the household unit was introduced in the United States. Many scientific studies have been conducted to investigate just how drinking ionized water can give the consumer beneficial effects every day that they drink it. Alkaline ionized water is produced through the water electrolysis process that creates "restructured/reduced/micro-clustered water." This makes the water more readily available. It also raises PH value (note that anything greater than 7.0 can be considered alkaline water.)  Athletes use alkaline water with a high pH to counteract muscle fatigue caused by lactic acid build-up. Drinking ionized water also has demonstrated anti-aging effects as well as prevention of diseases such as cancer, diabetes, ulcers and arteriosclerosis. It has even found that an alkaline with a pH of 8.8 can be considered an adjunct in the treatment of acid reflux disease. According to the national heartburn alliance of the estimated 54 million Americans suffer from heartburn. 75% say Coffee causes it. . By cold-brewing coffee with alkaline water, you’re creating a less acidic and less harsh experience on the stomach. When we brew coffee with alkaline water, we are completely reinventing the coffee experience.</p>
+                                </div>
+                                <br>
+                                <center><p id="brought-to-you" style = "font-size: 16px, color: white">Brought to you by:</p></center>
+                                <p><center> <a href = "http://tyentusa.com/" target="_blank"><img src="images/tyent_new.png" alt = "Tyent"></a></center></p>
+
+                                </div>
+                            </li>
+                        </ul>
+                    <!-- </div> -->
+                </div>
+
+                    <div class="hover">
+                    <center><img src="images/cold_brew.png" alt = "Cold Brew"></center>
+                        <ul class="hover_extra">
+                            <li>
+                                <div id="cold_brewing_hover" class="the_science_icons_hover">
+                                    <center><img src="images/cold_brew_logo.png"></center>
+                                    <p>Cold Brewing is an ancient Peruvian process Todd Simpson brought it to America in 1964 from Peru. It is done by steeping coffee grounds for a extended a period of time vs. short bouts. In a nutshell, time replaces heat. Because hot water doesn't’t penetrate the coffee gournds, the acidic oils from the coffee bean are not released and transferred into the liquid mixture. This creates anywhere from 65% - 80% less acidity. Heat brewed coffee is usually at a PH of 5 or lower.  For every one ounce of coffee drink you would need to drink 20 ounces of water to completely neutralize acidity created in the body. Koffee strives to keep the pH between 6 & 8, which means our coffee ranges from minimally acidic, neutral or “pH balanced”, to slightly alkaline. Because acidity is connected to many degenerative illnesses, This means our low acid Koffee is easier on the stomach, joints and energy levels.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="hover">
+                    <center><img src="images/vegan_new.png" alt = "Vegan & Dairy-Free"></center>
+                        <ul class="hover_extra">
+                            <li>
+                                <div id="vegan_hover" class="the_science_icons_hover">
+                                    <center><img src="images/coconut.png"></center>
+                                    <p>We utilize a Coconut Milk creamer, which is dairy, soy, gluten and cholesterol free. Coconuts contain significant amounts of fat, but unlike other nuts, they provide fat that is mostly in the form of medium chain saturated fatty acids (MCFAs). MCFAs are rapidly metabolized into energy in the liver and because of this, tt is thought that unlike other saturated fats, MCFAs are used up more quickly by the body and are less likely to be stored as fat. MCFAs are also shown to be antiviral and antibacterial and can destroy a wide variety of disease causing organisms. Science has proven over and over again the benefits of drinking a plant-based milk over animal milks. On top of all the health benefits, comes the dramatically lighter carbon footprint left on earth’s environment. Plant milk is better for your body, your environment, and of course the peaceful cow.  </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="hover">
+                    <center><img src="images/sugar_free.png" alt = "Sugar-Free & Low-Sugar"></center>
+                        <ul class="hover_extra">
+                            <li>
+                                <div id="fair_trade_hover" class="the_science_icons_hover">
+                                    <center><img src="images/sugar_free_leaf.png"></center>
+                                    <p>Excess sugar adds unnecessary calories & creates a variety of terrible health issues. It’s bad for the teeth, hard on the liver, causes inflammation, cancer and creates insulin resistance, a stepping-stone towards diabetes. By reducing sugar content & replacing sugar with all natural, non-artificial sweeteners you both lower the calories and the unnecessary risks that come along with it. We replace sugar with the stevia plant which has zero calories, zero carbs, zero sugar and has zero impact on blood sugar level. It truly is guilt-free sweetness.</p>
+                                    <br>
+                                    <center><p id="brought-to-you" style = "font-size: 16px, color: white">Brought to you by:</p></center>
+                                    <p><center> <a href ="http://sweetleaf.com" target="_blank"><img src="images/sweetleaf.png" alt = "SweetLeaf"></a></center></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="hover">
+                    <center><img src="images/organic_new.png" alt = "Organic"></center>
+                        <ul class="hover_extra">
+                            <li>
+                                <div id="rainforest_hover" class="the_science_icons_hover">
+                                    <center><img src="images/organic_logo.png"></center>
+                                    <p>Next to tobacco, coffee is sprayed with more chemicals than any other product consumed by humans. Coffee is one of the largest and most important crops in the world, worth roughly $16.5 billion in the United States alone. Organic coffee only accounts for 6.6% of the world’s harvest though. We are without a doubt living in one of the most toxic times in human history. It is more important now than ever to choose a path of health and pay close attention n to what is in our foods so we know what’s going into our bodies. Amongst the greatest threats to our human health is the chemicals sprayed on our food. Pesticides have been linked to a number of health problems, including neurologic and endocrine (hormone) system disorders, birth defects, cancer, and other diseases. By ditching conventionally grown foods.</p>
+                                    <br>
+                                    <center><p id="brought-to-you" style = "font-size: 16px, color: white">Brought to you by:</p></center>
+                                    <p><center><a href = "https://www.ccof.org/" target="_blank"><img src="images/ccof_new.png" alt = "CCOF"></a></center></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="hover">
+                    <center><img src="images/fairtrade_new.png" alt = "Fair-Trade & Shade-Grown"></center>
+                        <ul class="hover_extra" style="margin-left: 6px">
+                            <li>
+                                <div id="shade_grown_hover" class="the_science_icons_hover">
+                                    <center><img src="images/fair_trade_logo.png"></center>
+                                    <p>FAIR TRADE  - Fair Trade  coffee empowers farmers to get a fair price for their harvest, helps workers create safe working conditions, provides a decent living wage and guarantees the right to organize. Through direct, equitable trade, farming and working families are able to eat better, keep their kids in school, improve health and housing, and invest in the future. Keeping families, local economies, the natural environment, and the larger community strong today and for generations to come; these are the results that are sought out through Fair Trade.</p>
+                                    <br>
+                                    <center><p id="brought-to-you" style = "font-size: 16px, color: white">Our beans are certified<br>Fair Trade by:</p></center>
+
+                                    <p><center><a href = "http://fairtradeusa.org/" target="_blank"><img src = "images/fair_trade_certified_new.png" alt = "Fair Trade Certified"></a></center></p>
+                                    <p>SHADE GROWN - Traditionally, all coffee was shade grown. As the coffee beans mature more slowly in the shade, natural sugars increase and enhance the flavor of the coffee. Shade grown coffee is most often organically grown, free of chemical use. Shade grown coffee requires little or no chemical fertilizers, pesticides or herbicides. The shade trees also filter carbon dioxide which causes global warming, and aid in soil moisture retention which minimizes erosion. Shade grown coffee is not only better for the environment, but also for earths creatures. Migrating bird populations have been in rapid decline since the introduction of "sun" coffee and the consequent destruction of rainforest for more coffee plantations. As many as 150 species of birds have been identified on shade coffee farms. Shade coffee farms are, for the most part, organic and sustainable.</p>
+                                    <p><center><img src = "images/shade_grown_new.png" alt = "Shade Grown"></a></center></p>
+                                    <br>
+                                    <p>RAINFOREST ALLIANCE CERTIFIED – The Rainforest Alliance certified seal assures consumers that the product they are purchasing has been grown and harvested using environmentally and socially responsible practices. Farms and forestlands that meet the rigorous, third-party standards of the Sustainable Agriculture Network or the Forest Stewardship Council are awarded the Rainforest Alliance Certified seal.</p>
+                                    <p><center><a href = "http://www.rainforest-alliance.org/" target="_blank"><img src = "images/rainforest_alliance_new.png" alt = "Rainforest Alliance"></a></center></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+
+        <div id="the_beginning">
+            <div id="the_beginning_left">
+                <h3>Origin</h3>
+            </div>
+            <div id="the_beginning_right">
+                <p>Koffee’s initial startup was successfully funded in November of 2014 through the popular crowd funding site; Kickstarter. 100 individuals collectively put together $30,000 in 30 days, proving that there is a strong desire for a healthier coffee. <strong>Koffee</strong> concentrates its rich flavor in an 8 ounce espresso style sipper. Koffee Reinvented is just the first in a series of healthy innovative beverages we plan to bring to the market.</p>
+                <br><br><br><br>
+                <img style = "width: 25%" src = "images/kickstarter.png">
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="the_founder">
+            <!-- <h3>Founder</h3>
+            <p>Koffee was inspired by Kody Chaet, an educational plant-based chef and lifestyle transformation coach, who sought to grow the world through the art of healthier food and beverage. He grew up a vegetarian and avid animal activist near Yellowstone, Montana. As a young entrepreneur, Kody pursued multiple careers in the health and wellness industry. He started n Portland, OR as a personal fitness trainer and smoothly transitioned into the private chef world in Los Angeles, CA. After a decade as a health and fitness professional, he decided he wanted to spread his gift of healing to the world as a whole. Kody realized the best way to spread his message of health to the masses, was to reinvent everyones favorite health beverages, starting with coffee, the most popular beverage on the Planet Earth!</p>
+            <div id="the_founder_image">
+                <center><img src="images/founder.png" width="100%" alt = "Kody Chaet"></center>
+            </div> -->
+            <h3>Locations</h3>
+            <div id="map" style="height: 450px;"></div>
+        </div>
+        <div style="clear: both;"></div>
+
+        <!-- <div id="our_store">
+            <h1>Our Store</h1>
+        </div>
+        -->
+        <div style="clear: both;"></div>
+        <div id="contact_us">
+            <h2>Kontact</h2>
+            <div id="contact_us_left">
+                <div id="contact_us_left_top">
+                    <div style="height:168px"></div>
+
+                    <h1 style = "margin-top: -100px">TESTIMONIALS</h1>
+                    <!-- Adding Flexslider testimonials slider below. -->
+                    <div class="flexslider">
+
+                  <ul class="slides" id = "test-box">
+                  <!-- Above: style = "margin-left: 50px" -->
+
+                    <li>
+                      <div id = "test-holder">
+                      <p id ="test" style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Leonard Goodloe <br>(Private Celebrity Chef):</span><br>
+“Koffee with a K is Krazy with a K.  Krazy good!!! <strong>I have not drank coffee for years until now</strong>, finally I can enjoy my favorite beverage again without all the negative side effects." </p>
+                    </div>
+                    </li>
+
+                    <li>
+                        <div id = "test-holder">
+                      <p id = "test" style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Sarah Butler <br>(student at UCLA):</span><br> "Best Koffee... Ever! I studied all night for my exams and the best part is the energy with <strong>NO CRASH AT ALL!!!</strong>"</p>
+                    </div>
+                    </li>
+
+                    <li>
+                        <div id = "test-holder">
+                      <p id = "test" style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Hayley Entreano <br>(Celebrity Publicist):</span><br> "As a person who suffers from <strong><em>Tourette Syndrome</em></strong>, coffee normally triggers more tics. I was hesitant to try Koffee Reinvented but then I did & I have never looked back. For the first time ever, I am able to enjoy coffee without having to worry about exacerbating my tics."</p>
+                    </div>
+                    </li>
+                 <!-- Additional testimonial slides #4-8 below. -->
+
+                    <li>
+                        <div id = "test-holder">
+                      <p id = "test" style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Sandra Leen <br>(mother):</span><br>
+"I have always loved coffee, but since being diagnosed with <strong><em>Crohn's/Colitis disease</em></strong>, coffee has been my stomach's worst enemy. Not only is Koffee delicious, but <strong><em>it was the first coffee I ever drank that did not upset my stomach...ever!</em></strong>"</p>
+                    </div>
+                    </li>
+
+                     <li>
+                        <div id = "test-holder">
+                      <p id = "test" style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Rajeev Ajaka <br>(Restaurant Owner):</span><br>
+"I’m a <strong>Starbucks junkie</strong> & it was hard for me to imagine that I could possibly replace my skinny hazelnut latte, but here we are.  Koffee now lines the top shelf of my refrigerator..."</p>
+                    </div>
+                    </li>
+
+                     <li>
+                        <div id = "test-holder">
+                      <p id = "test" style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Farbod Sufran <br>(Analyst):</span><br>
+"<strong>Finally, a cold-brewed coffee that actually tastes the way it's supposed to!</strong>"</p>
+                    </div>
+                    </li>
+
+                    <li>
+                        <div id = "test-holder">
+                      <p id = "test" class = 'trainer-test' style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Ralph Remy <br>(Pro Bodybuilder Mr USA / Mr CT - Personal Trainer):</span><br>
+"I drink an average of 3-4 cups a day & always end up paying the price at the end of the day, feeling dehydrated and lethargic. After just a week, Koffee helped me lower my intake to one cup a day. I'm hooked on Koffee, and have no guilt."</p>
+                    </div>
+                    </li>
+
+                      <li>
+                        <div id = "test-holder">
+                      <p id = "test" style = "color: white; opacity: 1.0;
+    line-height: 34px;"><span class = "test-author">Reynaldo Davis Carter <br>(Production Designer):</span><br>
+"Quite often, I work 18 hour days on film productions. I was never really a coffee drinker unless I needed an extra pick me up on these long days. I always tried to avoid coffee. When I discovered Koffee, it changed my life. Now I feel I can move mountains without any price to pay."</p>
+                    </div>
+                    </li>
+                  </ul>
+                  </div>
+
+
+                <!-- <p>Coming Soon</p> -->
+
+
+                <div id="subscribe"></div>
+                </div>
+                <div style="clear: both;" class="hide"></div>
+
+                <div id="contact_us_left_bottom">
+                    <div id="faqs_icon"></div>
+                    <h1>Newsletter Signup</h1>
+                    <p>Click here to subscribe!</p>
+
+
+
+
+
+                    <div id="read_more"></div>
+                </div>
+            </div>
+            <div style="clear: both;" class="show"></div>
+
+            <div id="contact_us_right">
+                <div id="lets_talk_icon"></div>
+                <h1>Let's Talk</h1>
+                <h3>503-413-9949</h3>
+                <div id="send_a_message_icon"></div>
+                <h1>Send a Message</h1>
+                <p>Questions / Comments? Send us a message.</p>
+                <div id="contact_form">
+                    <form name="lets_talk" method="post" action="send_mail.php">
+                        <input type="text" name="name" placeholder="Name" class="contact_text">
+                        <input type="email" name="email" placeholder="Email" class="contact_text">
+                        <textarea name="message" placeholder="Message" class="contact_message"></textarea>
+                        <input type="submit" value="" class="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="social">
+            <div id="social_icons">
+                <div id="social_icon_container">
+                    <div id="email_lrg">
+                        <a href="mailto:Kody@KoffeeReinvented.com"><center><img src="images/mail.png"></center></a>
+                    </div>
+                    <div id="facebook_lrg">
+                        <a href="http://www.facebook.com/KoffeeReinvented" target="_blank"><center><img src="images/facebook.png"></center></a>
+                    </div>
+                    <div id="twitter_lrg">
+                        <a href="http://www.twitter.com/KoffeeReinventd" target="_blank"><center><img src="images/twitter.png"></center></a>
+                    </div>
+                    <div id="youtube_lrg">
+                        <a href="https://www.youtube.com/channel/UCXbnzwH05iTR6As89ttlziA/feed" target="_blank"><center><img src="images/youtube.png"></center></a>
+                    </div>
+                    <div id="instagram_lrg">
+                        <a href="http://www.instagram.com/KoffeeReinvented" target="_blank"><center><img src="images/instagram.png"></center></a>
+                    </div>
+                    <div id="yelp_lrg">
+                        <a href="http://www.yelp.com/biz/koffee-reinvented-los-angeles" target="_blank"><center><img src="images/yelp.png"></center></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <footer>
+            <div class="footer_container">
+                <div id="copyright">
+                    <p>© Koffee Reinvented.</p>
+                </div>
+                <!-- <a href="http://www.popthepixel.com" target="_blank"><div id="ptp"></div></a> -->
+            </div>
+        </footer>
+    <!-- Note: jQuery is defined twice. Commented out the CDN below. -->
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+        <!-- Adding Masonry testimonial CDN -->
+        <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+        <!-- Running the masonry testimonial script -->
+        <script>
+            $('.cd-testimonials-all-wrapper').children('ul').masonry({
+                itemSelector: '.cd-testimonials-item'
+            });
+        </script>
+        <!-- Adding flexslider CDN
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/jquery.flexslider.js">
+        </script>
+        Running the carousel script below, via flexslider. -->
+        <script>
+        $('.cd-testimonials-wrapper').flexslider({
+        //declare the slider items
+        selector: ".cd-testimonials > li",
+        animation: "slide",
+        //do not add navigation for paging control of each slide
+        controlNav: false,
+        slideshow: false,
+        //Allow height of the slider to animate smoothly in horizontal mode
+        smoothHeight: true,
+        start: function(){
+            $('.cd-testimonials').children('li').css({
+                'opacity': 1,
+                'position': 'relative'
+            });
+        }
+    });
+        </script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+        $( ".hover" ).hover(
+            function() {
+                $(this).find('.hover_extra').show();
+            }, function() {
+                $(this).find('.hover_extra').hide();
+            }
+        );
+
+        // // NOTE: Adding window-resize jQuery (prepend logo small to the nav menu.)
+        // $(window).on('resize', function(){
+        //     var win = $(this); //this = window
+        //     if (win.height() <=760) {
+
+        //         $('#logo').prepend('.nav-bar')
+        //     }
+        // });
+        // // END new jQuery functionality.
+
+        </script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+        <script src="js/jquery.sticky.js"></script>
+        <script>
+          $(document).ready(function(){
+            $("#sticky").sticky({topSpacing:0});
+          });
+        </script>
+
+        <script src='js/bind-polyfill.js'></script>
+        <script src='js/smooth-scroll.js'></script>
+        <script>
+        // Add conditional: if mobile, change offset.
+        if(screen.width > 1024) {
+
+            smoothScroll.init({
+                speed: 1000,
+                easing: 'easeInOutCubic',
+                // Editing offset to update scroll-to endpoint. Started at 0.
+                offset: 70,
+                updateURL: true,
+                callbackBefore: function ( toggle, anchor ) {},
+                callbackAfter: function ( toggle, anchor ) {}
+            });
+            console.log("desktop")
+        }
+
+        // If iPad, change offset.
+        else if(screen.width >= 768) {
+
+            smoothScroll.init({
+                speed: 1000,
+                easing: 'easeInOutCubic',
+                // Editing offset to update scroll-to endpoint. Started at 0.
+                offset: 75,
+                updateURL: true,
+                callbackBefore: function ( toggle, anchor ) {},
+                callbackAfter: function ( toggle, anchor ) {}
+            });
+            console.log("tablet");
+        }
+        else { //if mobile
+
+            smoothScroll.init({
+                speed: 1000,
+                easing: 'easeInOutCubic',
+                // Editing offset to update scroll-to endpoint. Started at 0.
+                //offset: 210,
+                offset: 30,
+                updateURL: true,
+                callbackBefore: function ( toggle, anchor ) {},
+                callbackAfter: function ( toggle, anchor ) {}
+            });
+            console.log("mobile");
+        }
+        </script>
+        <!-- Adding in timer for Flexslider. -->
+        <script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "slide",  // slide or fade
+          slideshowSpeed: 1000, // Time in milliseconds before the the next slide starts
+          controlsContainer: ".flex-container", // the container that holds the flexslider
+          // Disable touch for mobile pausing. 06.07.16 edit
+          touch: false,
+          pauseOnAction: false
+    });
+  });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGVc35_-c9if7Dtx5-XVeS9rR4_fIyzZQ"></script>
+<script type="text/javascript" src="/test/js/map_koffee.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-58773807-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+
+<!-- Running the Sidr script 06.13.16 -->
+<script>
+    $('#responsive-menu-button').sidr({
+      name: 'sidr-main',
+      source: '#mobile-sidr'
+    });
+</script>
+
+<!-- Integrating TouchSwipe JS library for swipe to open/close on mobile 06.14.16 -->
+<script src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.13/jquery.touchSwipe.min.js"></script>
+
+<!-- Scroll window: fix the mobile-nav sidr menu -->
+
+<script>
+    $('#mobile-header').swipe( { fingers:'all', swipeLeft:swipeOpen});
+
+    $('body').swipe({fingers: 'all', swipeRight: swipeClose});
+        $.fn.swipe.pageScroll.AUTO;
+
+        //Single swipe handler for left swipes
+        function swipeOpen() {
+            $.sidr('open', 'sidr-main');
+
+        };
+        function swipeClose() {
+            $.sidr('close', 'sidr-main');
+        };
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+        //threshold: 45,
+
+</script>
+    </body>
+</html>

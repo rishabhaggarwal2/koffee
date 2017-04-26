@@ -1,0 +1,181 @@
+/*MEdia queries*/
+
+  @media(max-width: 1474px) {
+
+    /*Move the long personal trainer testimonial up in its container when it starts to overflow..*/
+    .trainer-test {
+      margin-top: 1em !important;
+    }
+  }
+
+
+  @media (max-width: 1424px) {
+    #social_icon_container > div { height: 120px!important; width: 120px!important; }
+    #social_icon_container img { margin: 42px auto; }
+    #email_lrg img { margin: 50px auto 0 !important; }
+    #yelp_lrg img { margin: 36px auto 0 !important; }
+    #instagram_lrg img { margin: 46px auto 0 !important; }
+    #social_icon_container { border-left: 1px solid #fff; margin: 0 auto; max-width: 735px; position: relative; width: 100%; }
+    #the_science_icon_container { border-left: 0 none; }
+  }
+  @media ( max-width: 1070px) {
+      .main_nav #logo { height: 140px; width: 140px; background-image: url("images/logo_lrg_sm.png"); }
+      .main_nav ul a { font-size: 17px; }
+      /*Updated padding to 0px 15px,for main and mobile nav 5/20/16*/
+      .main_nav li p {font-size: 15px; padding: 0 15px !important;}
+      li p { margin: 51px 0 0; opacity: 1; }
+      li { float: left; list-style: outside none none; margin: 0; }
+      #navigation { margin: 0 auto; width: 800px; }
+      .main_nav { height: 145px; }
+      .mobile_nav { top: 28px; }
+      .mobile_nav #logo_sm { width: 140px; height: 45px; background-image: url("images/logo_sm_sm.jpg"); }
+      .mobile_nav ul a { font-size: 17px; }
+      .mobile_nav li { margin: 0; }
+      .mobile_nav li p {font-size: 15px;}
+      .mobile_nav #logo_sm { margin: 48px 0 0; }
+      header { height: 146px; }
+      .mobile_nav #navigation { margin: -16px auto!important; }
+      .the_science_icons_hover p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 22px;
+      max-height: 450px;
+      max-width: 80%!important;
+      overflow-y: auto;
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: 970px) {
+    #why { width: 100%; }
+    #newsletter { width: 100%; }
+    #the_beginning_right { width: 100%; }
+    #the_beginning_left { width: 100%; }
+    #contact_us_right { float: right; width: 100%; }
+    #contact_us_left { float: left; width: 100%; }
+    #contact_us_right { float: right; width: 100%;}
+    #contact_us_left_top { background-image: url("images/blue_bg.jpg"); float: left; min-height: 455px; position: relative; width: 50%; }
+    #contact_us_left_bottom { background-image: url("images/brown_bg.jpg"); float: right; min-height: 455px; position: relative; /*width: 50%*/; }
+    .hide { display: none; }
+    .show { display: block; }
+    #the_founder_image { height: auto; margin: 0 auto -4px; max-width: 526px; }
+    .hover_extra {
+      display: none;
+      margin: 0 auto!important;
+      padding: 0 !important;
+      position: relative;
+      width: 100%; cursor: pointer;
+    }
+    /*Stack testimonials on top of the brown box.*/
+
+    #contact_us_left_top {width: 100%;}
+    #contact_us_left-bottom {width: 100% !important;}
+
+    /*testimonial fills its container*/
+    #test {width: 90% !important;}
+
+  }
+
+  @media (max-width: 760px) {
+    #the_science_icon_container > div { width: 49%; border: 0px!important; }
+    #product_images_container > div {width: 49%; border: 0px!important;}
+
+    #the_science_icon_container { border: 0 none !important; }
+    #product_images_container {border:0 none !important;}
+
+    #social_icon_container { border-left: 0 none; }
+    #social_icon_container > div { border: 0 none; height: 46px !important; width: 46px !important; }
+    #social_icon_container img { margin: 42px auto; width: 24px; }
+    #email_lrg img { margin: 17px 0 0 !important; }
+    #yelp_lrg img { margin: 9px 0 0 !important; width: 24px; }
+    #instagram_lrg img { margin: 13px 0 0 !important; width: 24px; }
+    #social_icon_container img { margin: 4px auto; }
+    #facebook_lrg img { margin: 12px 0 0 !important; width: 14px !important; }
+    #twitter_lrg img { margin: 15px 0 0 !important; }
+    #youtube_lrg img { margin: 10px 0 0 !important; }
+    #social_icon_container { border: 0 none; width: 280px; }
+
+    .main_nav { display: block; }
+    .main_nav { height: 355px; }
+    .main_nav li { float: none; }
+    .main_nav #navigation { margin: 0 auto; width: 280px; }
+    .main_nav #logo_sm { margin: 0 auto; position: relative; }
+    .main_nav li p { margin: 0; }
+    .main_nav #logo { margin: 0 auto; }
+
+    .mobile_nav { display: block; top: 0!important;}
+    .mobile_nav li { float: none; }
+    .mobile_nav #navigation { margin: 0 auto!important; width: 280px; }
+    .mobile_nav #logo_sm { margin: 0 auto; position: relative; }
+    .mobile_nav li p { margin: 0; }
+    .mobile_nav { background-image: url("images/white_bg_new.jpg"); height: 245px; position: absolute; top: 0px; width: 100%; }
+
+    /*Prevent horizontal overflow*/
+    html, body{
+    width:100%;
+    overflow-x:hidden;
+    }
+
+    /*Center the testimonials in their div on mobile.*/
+    #test {
+      margin-top: 2em !important;
+      /*margin-left: 2em !important;*/
+      text-align: center;
+    }
+
+    /*Center the hover image in its container in mobile.*/
+    #product_images_container img {
+      width: 100%;
+    }
+    /*Footer fills container*/
+    .footer-container {
+      height: 91px;
+    }
+
+
+  }
+
+  @media (max-width: 560px) {
+    #the_science_icon_container > div { width: 100%; }
+    #product_images_container > div {width: 100%;}
+
+    p { max-width: 280px!important; margin: 0 auto!important; }
+    h2 { font-size: 50px; }
+    h1 { font-size: 20px; }
+    #contact_form { margin: 20px auto; max-width: 280px; position: relative; }
+    #the_science_icon_container > div { border: 0px!important; }
+    #product_images_container > div { border: 0px!important;}
+
+    #social_icon_container { border-left: 0 none; }
+    #social_icon_container > div { border: 0 none; height: 46px !important; width: 46px !important; }
+    #social_icon_container img { margin: 42px auto; width: 24px; }
+    #email_lrg img { margin: 17px 0 0 !important; }
+    #yelp_lrg img { margin: 9px 0 0 !important; width: 24px; }
+    #instagram_lrg img { margin: 13px 0 0 !important; width: 24px; }
+    #social_icon_container img { margin: 4px auto; }
+    #facebook_lrg img { margin: 12px 0 0 !important; width: 14px !important; }
+    #twitter_lrg img { margin: 15px 0 0 !important; }
+    #youtube_lrg img { margin: 10px 0 0 !important; }
+    #social_icon_container { border: 0 none; width: 280px; }
+    #copyright { float: none; margin: 0 auto; }
+    #ptp { float: none; margin: 0 auto 12px; }
+    #the_science_icon_container > div { float: none; margin: 0 auto; width: 100%; }
+    .hover_extra { display: none; margin: 0 auto!important; padding: 0 20px 0 0 !important; position: absolute; width: 100%; cursor: pointer; }
+    #contact_us_left_top p { color: #fff; font-size: 16px; line-height: 20px; max-width: 215px; opacity: 0.4; padding: 0; width: 100%; }
+
+    /*Prevent horizontal overflow*/
+    html, body{
+    width:100%;
+    overflow-x:hidden;
+    }
+
+    /*Center the testimonials in their div on mobile.*/
+    #test {
+      margin-top: 2em !important;
+      /*margin-left: -3em !important;*/
+      text-align: center;
+      max-width: 100% !important;
+      /*margin-left: 3em !important;*/
+    }
+  }
+  /**/

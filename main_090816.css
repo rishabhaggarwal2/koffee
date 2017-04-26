@@ -1,0 +1,762 @@
+
+	#apply_box { background-image: url(images/blue_bg.jpg); margin: 41px auto; max-width: 600px; padding: 10px 0; position: relative; width: 100%; }
+		#apply_popup { display: block; position: fixed; min-width: 100%; min-height: 100%; background-image: url(images/popup_bg.png); background-color: transparent; top: 0px; z-index: 12; opacity: 1; }
+		#apply .container {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 21px auto;
+    max-height: 100%;
+    max-width: 280px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#apply h2 { font-size: 32px; opacity: 0.2; }
+		#close { background-image: url("images/white_bg.jpg"); cursor: pointer; display: block; height: 40px; position: absolute; bottom: -50px; width: 100%; z-index: 12; }
+        	#close h1 { color: #000; font-size: 28px; line-height: 40px; margin: 0; text-align: center; text-transform: uppercase; }
+
+		#apply p {
+    color: #fff !important;
+}
+
+		.hover_extra {
+    cursor: pointer;
+    display: none;
+    margin-left: -8px;
+    padding: 0 20px 0 0;
+    position: relative;
+    width: 100%;
+}
+.hover_extra div {
+    padding: 0 16px 0 0!important;
+}
+#vegan_hover {
+    position: relative;
+    top: -518px;
+		width: 100%;
+}
+#iodized_hover {
+    position: relative;
+    top: -518px;
+		width: 100%;
+		/*overflow: hidden;*/
+}
+#cold_brewing_hover {
+    position: relative;
+    top: -520px;
+	width: 100%;
+}
+#fair_trade_hover {
+    position: relative;
+    top: -518px;
+		width: 100%;
+}
+#rainforest_hover {
+    position: relative;
+    top: -518px;
+		width: 100%;
+}#shade_grown_hover {
+    position: relative;
+    top: -518px;
+		width: 100%;
+		margin-left: -12px;
+}
+.the_science_icons_hover {
+    background-image: url("images/yellow_bg.jpg") !important;
+    width: 464px;
+    max-height: 150px;
+	overflow-y: auto;
+}
+.the_science_icons_hover p {
+    color: #fff;
+    float: none !important;
+    font-family: cabin;
+    font-size: 16px;
+    height: auto !important;
+    line-height: 22px;
+    margin: 0 auto;
+    max-width: 375px;
+    /*overflow-y: auto;*/
+    position: relative;
+    text-align: justify;
+    text-transform: none !important;
+}.the_science_icons_hover {
+    background-image: url("images/yellow_bg.jpg") !important;
+    height: 100%;
+    min-height: 563px;
+}
+
+							.the_science_icons_hover p { text-align: justify; color: #fff; font-size: 16px; line-height: 22px; max-width: 375px; }
+						.the_science_icons_hover img { margin: 20px 0 16px!important; }
+
+			#brought-to-you {
+				color: #fff;
+    float: none !important;
+    text-align: center !important;
+    font-family: cabin;
+    font-size: 16px;
+    height: auto !important;
+    line-height: 22px;
+    margin: 0 auto;
+    max-width: 375px;
+    overflow: auto;
+    position: relative;
+    text-align: justify;
+    text-transform: none !important;
+
+			}
+	/* ALL */
+
+	html {   }
+
+	body { font-family: 'Cabin', sans-serif; font-weight: 400; margin: 0; padding: 0; background-image: url(images/welcome_bg.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+	h1 { font-family: 'Oswald', sans-serif; font-weight: 400; font-size: 40px; padding: 0; margin: 0; position: relative; text-transform: uppercase; color: #fff; text-align: center; }
+	h2 { font-family: 'Oswald', sans-serif; font-weight: 800; font-size: 80px; padding: 0; margin: 0; position: relative; text-transform: uppercase; opacity: 0.1; color: #5c4033; text-align: center; }
+	h3 { font-family: 'Oswald', sans-serif; font-weight: 400; font-size: 50px; padding: 0; margin: 0; position: relative; text-transform: uppercase; color: #fff; text-align: center; }
+	p { padding: 0 20px; text-align: center; margin: 0 auto; line-height: 33px; font-weight: 400; }
+	ul { font-family: 'Cabin Sketch', cursive; color: #3c2415; font-size: 27px; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; }
+	.main_nav { width: 100%; }
+	.main_nav ul a { opacity: 1; font-family: 'Cabin Sketch', cursive; color: #5c4033; font-size: 21px; font-weight: 700; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; text-decoration: none; }
+	.main_nav ul a:hover { border-bottom: 8px solid #ffa800; opacity: 1!important; }
+
+	/*new: edited padding (horizontal) to be 15px (it was 0px) to offset less nav text (Fri., 5/20/16)*/
+	.main_nav li p {padding: 0 15px !important;}
+
+	li { list-style: none; float: left; margin: 0 6px; }
+		li p { opacity: 1; margin: 104px 0 0; }
+	.container { max-width: 345px; margin: 0 auto; }
+	.footer_container { max-width: 1350px; padding: 0 20px; margin: 0 auto; }
+	#copyright { float: left; }
+		#copyright p { font-size: 15px; line-height: 48px; margin: 0 auto; color: white !important; }
+	footer { background-image: url("images/footer.png"); min-height: 48px; z-index: 10 !important; }
+	#ptp { float: right; width: 70px; height: 30px; background-image: url(images/ptp.png); margin: 9px 0 0; }
+	#logo { height: 235px; width: 235px; background-image: url(images/logo_new.png); opacity: 1!important; margin-top: 10px;}
+	header { z-index: 3; top: 0px; height: 100%; max-height: 255px; position: absolute; width: 100%; background-image: url(images/white_bg.jpg); }
+	.show { display: none; }
+	.hide { display: block; }
+	.mobile_nav { background-image: url("images/white_bg_new.jpg"); height: 116px; position: absolute; top: 119px; /*width: 100% !important;*/ }
+
+	/*New styling for sticky mobile nav*/
+	#sticky {width: 100% !important;}
+
+	#logo_sm { height: 45px; width: 140px; background-image: url(images/logo_sm_sm.jpg); margin: 43px 23px; }
+	.mobile_nav ul { font-family: 'Cabin Sketch', cursive; color: #5c4033; font-size: 21px; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; }
+	.mobile_nav ul a { border-bottom: 6px solid transparent; color: #5c4033; font-family: "Cabin Sketch",cursive; font-weight: 700; opacity: 1; font-size: 21px; margin: 0 auto; max-width: 1053px; padding: 0 0 0px; text-decoration: none; text-transform: uppercase; width: 100%; }
+	.mobile_nav ul a:hover { border-bottom: 8px solid #ffa800; }
+	.mobile_nav li { list-style: none; float: left; margin: 0 6px; }
+
+  /*NOTE: also updated padding for mobile_nav li p: from 0px horizontal to 15px. 5/20/16*/
+		.mobile_nav li p { margin: 54px 0 0; opacity: 1.0; padding: 0px 15px; color: #5c4033 }
+	.main_nav { background-image: url("images/white_bg_new.jpg"); float: none !important; height: 255px; position: relative !important; z-index: 10; margin-top: 0px;}
+
+	.mobile_nav_sm { background-image: url("images/white_bg_new.jpg"); height: 116px; position: absolute; top: 119px; width: 100%; }
+	.mobile_nav_sm ul { font-family: 'Cabin Sketch', cursive; color: #5c4033; font-size: 21px; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; }
+	.mobile_nav_sm ul a { border-bottom: 6px solid transparent; color: #5c4033; font-family: "Cabin Sketch",cursive; font-size: 21px; margin: 0 auto; max-width: 1053px; padding: 0 0 0px; text-decoration: none; text-transform: uppercase; width: 100%; }
+	.mobile_nav_sm ul a:hover { border-bottom: 8px solid #ffa800; }
+	.mobile_nav_sm li { list-style: none; float: left; margin: 0 8px; }
+		.mobile_nav_sm li p { margin: 54px 0 0; opacity: 0.8; }
+
+	#main_nav_sm li { float: none; list-style: none; margin: 0 auto; }
+	#main_nav_sm ul { max-width: 280px; }
+	#main_nav_sm #logo { margin: 0 auto; }
+	#main_nav_sm li p { margin: 0px; }
+	#main_nav_sm { height: 295px; display: none; }
+	#main_nav_sm #navigation { width: 280px; }
+
+	/* WELCOME */
+
+	#gray_edge { /*background-image: url("images/gray_edge.png");*/ float: left; height: 6px; position: relative; top: 0!important; width: 100%; z-index: 2; }
+	#orange_edge { float: left; width: 100%; height: 6px; background-image: url(images/orange_edge.png); margin-top: -57px; z-index: 2; position: relative; }
+	#welcome_image { background-color: transparent; min-height: 475px; padding: 387px 0 0; top: 0px; width: 100%; }
+		#welcome_image img { max-width: 890px; }
+	#welcome_text {
+    background-image: url("images/yellow_bg.jpg");
+    float: left;
+    margin: 0 0 -1px;
+    min-height: 225px;
+    padding: 51px 0 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+		#welcome_text p { font-size: 20px; line-height: 34px; color: #5c4033; opacity: 1.0; max-width: 1073px; }
+
+
+	/* WHY KOFFEE & NEWSLETTER */
+
+	#why { background-image: url(images/brown_bg.jpg); float: left; width: 50%; min-height: 455px; z-index: 2; position: relative; }
+		#why_newsletter p { color: #fff; opacity: 0.4; line-height: 34px; font-size: 20px; width: 100%; max-width: 468px; padding: 0 20px; }
+	#newsletter { background-image: url(images/contact_us_left_bg_test.jpg); float: left; width: 50%; min-height: 455px; z-index: 2; position: relative; background-size: cover; background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center; }
+	#newsletter_icon { height: 88px; width: 81px; /*background-image: url(images/newsletter_icon.png);*/ margin: 50px auto 30px; }
+	#why_koffee_icon { height: 84px; width: 115px; background-image: url(images/beans.png); margin: 50px auto 30px; }
+	#learn_more { height: 44px; width: 143px; background-image: url(images/learn_more.png); margin: 50px auto 30px; display: none; }
+	#subscribe { height: 44px; width: 143px; background-image: url(images/subscribe.png); margin: 50px auto 30px; display: none; }
+
+
+	/* OUR STORY */
+
+	#our_story { position: relative; width: 100%; min-height: 428px; position: relative; float: left; z-index: 2; position: relative; background-image: url(images/yellow_bg.jpg); margin-bottom: -1px; }
+		#our_story p { text-align: center; font-size: 20px; line-height: 34px; font-style: italic; color: #5c4033; opacity: 1.0; font-weight: 400; max-width: 1072px; }
+			#our_story p span { font-style: normal; font-size: 18px; }
+		#our_story h2 { margin: 80px auto 22px; opacity: 1.0; color: #483429; }
+	#the_beginning { position: relative;  }
+	#the_beginning_left > h3 { margin: 180px auto; }
+	#the_beginning_left { float: left; width: 50%; min-height: 455px; background-image: url(images/the_beginning_bg.jpg); background-size: cover; background-position: top center; position: relative; margin: 0; }
+	#the_beginning_right { background-image: url(images/yellow_bg.jpg); float: left; width: 50%; min-height: 455px; position: relative; margin: 0; text-align: center;}
+		#the_beginning_right p { color: #000; font-size: 20px; line-height: 34px; width: 100%; max-width: 420px; padding: 0 20px; margin-bottom: -40px; margin-top:50px;}
+
+
+	/* THE FOUNDER */
+
+	#the_founder { background-image: url(images/blue_bg.jpg); position: relative; width: 100%; min-height: 510px; position: relative; margin: 0 auto; float: left; }
+		#the_founder p { text-align: center; color: #fff; opacity: 0.8; max-width: 1022px; font-size: 17px; line-height: 26px; }
+	#the_founder > h3 { margin: 36px auto 0; }
+	#the_founder_image { height: 306px; margin: 0 auto; max-width: 526px; }
+
+
+	/* THE SCIENCE */
+
+	#the_science { float: left; width: 100%; z-index: 2; position: relative; background-image: url(images/white_bg_new.jpg); }
+		#the_science > h2 { margin: 84px 0 84px; opacity: 1.0; color: #5c4033; }
+	#the_science_icons { width: 100%; background-image: url(images/blue_bg.jpg); float: left; }
+	#the_science_icon_container { width: 100%; max-width: 1404px; margin: 0 auto; position: relative; border-left: 1px solid #fff; }
+		#the_science_icon_container > div { background-image: url(images/blue_bg.jpg); float: left; height: 563px; width: 33%; max-width: 466px; border-bottom: 1px solid #fff; border-right: 1px solid #fff; border-left: 1px solid #fff; }
+	#the_science_icon_container img { margin: 92px auto; }
+	.the_science_icons_hover p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    max-height: 450px;
+    max-width: 80%;
+    overflow-y: auto;
+    text-align: justify;
+}
+	/* PRODUCT */
+	#products { float: left; width: 100%; z-index: 2; position: relative; background-image: url(images/white_bg_new.jpg); }
+		#products > h2 { margin: 84px 0 84px; opacity: 1.0; color: #5c4033; }
+
+  /*Mirrored the_science_icons below, just with dark brown background.*/
+  #the_product_icons { width: 100%; background-color: #5c4033 ; float: left; }
+
+	#product_images_container { width: 100%; max-width: 1404px; margin: 0 auto; position: relative; border-left: 1px solid #5c4033; }
+	#product_images_container > div { background-color: #5c4033; float: left; height: 563px; width: 33%; max-width: 466px; border-top: 1px solid #5c4033; border-bottom: 1px solid #5c4033; border-right: 1px solid #5c4033; border-left: 1px solid #5c4033; }
+	#product_images_container img {margin: 0 auto;}
+
+  /*PRODUCT HOVER EFFECTS*/
+ /*New styling for hover 5.27.16:
+ Each product div has 2 images: one is hidden, one is shown.
+ Hovering triggers the hover image to be shown, and the initial to be hid.*/
+
+/*Jet Blak*/
+#jet_blak_hover, #product:hover #jet_blak_off {
+  display:none;
+}
+
+#jet_blak_off, #product:hover #jet_blak_hover {
+  display:block;
+}
+
+/*Blak Chocolate*/
+
+#blak_chocolate_hover, #product:hover #blak_chocolate_off {
+  display:none;
+}
+
+#blak_chocolate_off, #product:hover #blak_chocolate_hover {
+  display:block;
+}
+
+/*Kream No Sugar*/
+
+#kream_no_sugar_hover, #product:hover #kream_no_sugar_off {
+  display:none;
+}
+
+#kream_no_sugar_off, #product:hover #kream_no_sugar_hover {
+  display:block;
+}
+
+/*Koffee Vanilla Bean*/
+#koffee_vanilla_bean_hover, #product:hover #koffee_vanilla_bean_off {
+  display:none;
+}
+
+#koffee_vanilla_bean_off, #product:hover #koffee_vanilla_bean_hover {
+  display:block;
+}
+
+/*Chai Pie*/
+#chai-pie_hover, #product:hover #chai-pie_off {
+  display:none;
+}
+
+#chai-pie_off, #product:hover #chai-pie_hover {
+  display:block;
+}
+
+/*Mint Mocha*/
+#mint_mocha_hover, #product:hover #mint_mocha_off {
+  display:none;
+}
+
+#mint_mocha_off, #product:hover #mint_mocha_hover {
+  display:block;
+}
+
+/*Mobile show/hide below. Since alignment of products is now
+vertical on the screen, you must start with the hover-product DOWN
+(margin-top: 128px), out of sight.
+When you hover, move it back up (margin-top: 0px) into view. U*/
+
+@media (max-width: 767px) {
+
+  /*Jet Blak*/
+  #jet_blak_hover  {
+    margin-top: 128px !important;
+  }
+
+  /*When you hover, change its margin back to 0.*/
+
+  #jet_blak_off, #product:hover #jet_blak_hover {
+  display:block;
+  margin-top: 0px !important;
+  }
+
+  #blak_chocolate_hover  {
+    margin-top: 128px !important;
+  }
+  #blak_chocolate_off, #product:hover #blak_chocolate_hover {
+  display:block;
+  margin-top: 0px !important;
+  }
+
+  #kream_no_sugar_hover {
+    margin-top: 128px !important;
+  }
+  #kream_no_sugar_off, #product:hover #kream_no_sugar_hover {
+  display:block;
+  margin-top: 0px !important;
+  }
+
+  #koffee_vanilla_bean_hover {
+    margin-top: 128px !important;
+  }
+  #koffee_vanilla_bean_off, #product:hover #koffee_vanilla_bean_hover {
+  display:block;
+  margin-top: 0px !important;
+}
+
+  #chai-pie_hover {
+    margin-top: 128px !important;
+  }
+  #chai-pie_off, #product:hover #chai-pie_hover {
+  display:block;
+  margin-top: 0px !important;
+}
+
+  #mint_mocha_hover {
+    margin-top: 128px !important;
+  }
+  #mint_mocha_off, #product:hover #mint_mocha_hover {
+  display:block;
+  margin-top: 0px !important;
+  }
+
+
+
+
+}
+
+/*END mobile product styling*/
+
+	/* CONTACT US */
+
+
+	#contact_us { position: relative; width: 100%; float: left; z-index: 2; position: relative; background-image: url(images/white_bg_new.jpg); }
+		#contact_us > h2 { margin: 84px 0 84px; opacity: 1.0; color: #5c4033;}
+	#contact_us #newsletter { float: left; width: 50%; }
+	#contact_us_left_top {background-image: url(images/contact_us_left_bg.jpg); background-position: center top; background-size: cover; float: left; min-height: 455px; /*max-height: 455px;*/ width: 100%;  }
+		 #contact_us_left_top p { color: #fff; opacity: 0.4; line-height: 20px; font-size: 16px; /*width: 100%; max-width: 468px; padding: 0 20px;*/ }
+	#contact_us_left_bottom { background-image: url(images/brown_bg.jpg); min-height: 455px; position: relative; float: left; width: 100%; }
+		#contact_us_left_bottom p { font-size: 16px; line-height: 20px; color: #fff; opacity: 0.4; max-width: 215px; }
+	#contact_us_left { float: left; width: 50%; }
+	#contact_us_right { float: left; width: 50%; background-image: url(images/contact_us_right_bg_test.jpg); background-position: top center; min-height: 910px; background-size: cover; }
+	#faqs_icon { height: 88px; width: 81px; background-image: url(images/faqs_icon.png); margin: 50px auto 30px; }
+	#read_more { height: 44px; width: 143px; background-image: url(images/read_more.png); margin: 50px auto 30px; display: none; }
+	#lets_talk_icon { height: 79px; width: 79px; background-image: url(images/lets_talk.png); margin: 40px auto 30px; }
+		#contact_us_right > h3 { font-family: 'Cabin', sans-serif; font-size: 30px; font-weight: 300; }
+		#contact_us_right a { color: #ffa800; font-size: 20px; text-decoration: none; }
+		#contact_us_right > p { color: #fff; font-size: 16px; }
+	#send_a_message_icon { height: 59px; width: 70px; background-image: url(images/send_message_icon.png); margin: 76px auto 20px; }
+	#contact_form { position: relative; margin: 20px auto; max-width: 373px; }
+	.contact_text { height: 46px; width: 100%; max-width: 373px; background-image: url(images/contact_text_bg.png); background-color: transparent; border: 0px; margin: 0 auto 12px; position: relative; float: none; text-align: center; }
+	.contact_message { height: 76px; width: 100%; /*max-width: 373px;*/ background-image: url(images/contact_text_bg.png); background-color: transparent; border: 0px; margin: 0 auto 12px; position: relative; float:none; resize: none; text-align: center; padding: 10px 1px 0px 1px; }
+  /*06.08.16: added 'float:none' to content_message to mirror 2 fields above.*/
+  /*06.08.16: commented out 'max-width' above.*/
+	.send { background-color: transparent; background-image: url("images/send.png"); background-position: center top; background-repeat: no-repeat; border: 0 none; cursor: pointer; height: 44px; margin: 14px auto 0; max-width: 373px; width: 100%; }
+	::-webkit-input-placeholder { color: #606060; font-family: cabin; font-size: 16px; }
+	:-moz-placeholder { color: #606060; font-family: cabin; font-size: 16px; }
+	::-moz-placeholder { color: #606060; font-family: cabin; font-size: 16px; }
+	:-ms-input-placeholder { color: #606060; font-family: cabin; font-size: 16px; }
+	#contact_us_right span { background-image: url("images/email_span.png"); background-repeat: no-repeat; font-size: 10px; margin: 0 2px 0 0; padding: 3px 6px 0; }
+
+	/*SOCIAL */
+
+	#social { width: 100%; background-color: #ffa800; float: left; z-index: 2; position: relative; }
+	#social_icons { width: 100%; background-color: #ffa800; }
+	#social_icon_container { width: 100%; max-width: 1407px; margin: 0 auto; position: relative; border-left: 1px solid #fff; }
+		#social_icon_container  > div { background-color: #ffa800; float: left; height: 232px; width: 232px; border-right: 1px solid #fff; border-left: 1px solid #fff; cursor: pointer; }
+		#social_icon_container > div:hover { background-color: #60aaff; }
+	#social_icon_container img { margin: 92px auto; }
+	#email_lrg img { margin: 100px auto 0 !important; }
+	#yelp_lrg img { margin: 86px auto 0 !important; }
+	#instagram_lrg img { margin: 96px auto 0 !important; }
+
+	/*MEdia queries*/
+
+	@media(max-width: 1474px) {
+
+		/*Move the long personal trainer testimonial up in its container when it starts to overflow..*/
+		.trainer-test {
+			margin-top: 1em !important;
+		}
+	}
+
+
+	@media (max-width: 1424px) {
+		#social_icon_container > div { height: 120px!important; width: 120px!important; }
+		#social_icon_container img { margin: 42px auto; }
+		#email_lrg img { margin: 50px auto 0 !important; }
+		#yelp_lrg img { margin: 36px auto 0 !important; }
+		#instagram_lrg img { margin: 46px auto 0 !important; }
+		#social_icon_container { border-left: 1px solid #fff; margin: 0 auto; max-width: 735px; position: relative; width: 100%; }
+		#the_science_icon_container { border-left: 0 none; }
+	}
+	@media ( max-width: 1070px) {
+			.main_nav #logo { height: 140px; width: 140px; background-image: url(images/logo_lrg_sm.png); }
+			.main_nav ul a { font-size: 17px; }
+      /*Updated padding to 0px 15px,for main and mobile nav 5/20/16*/
+			.main_nav li p {font-size: 15px; padding: 0 15px !important;}
+			li p { margin: 51px 0 0; opacity: 1; }
+			li { float: left; list-style: outside none none; margin: 0; }
+			#navigation { margin: 0 auto; width: 800px; }
+			.main_nav { height: 145px; }
+			.mobile_nav { top: 28px; }
+			.mobile_nav #logo_sm { width: 140px; height: 45px; background-image: url(images/logo_sm_sm.jpg); }
+			.mobile_nav ul a { font-size: 17px; }
+			.mobile_nav li { margin: 0; }
+			.mobile_nav li p {font-size: 15px;}
+			.mobile_nav #logo_sm { margin: 48px 0 0; }
+			header { height: 146px; }
+			.mobile_nav #navigation { margin: -16px auto!important; }
+			.the_science_icons_hover p {
+			color: #fff;
+			font-size: 16px;
+			line-height: 22px;
+			max-height: 450px;
+			max-width: 80%!important;
+			overflow-y: auto;
+			text-align: justify;
+		}
+	}
+
+	@media (max-width: 970px) {
+		#why { width: 100%; }
+		#newsletter { width: 100%; }
+		#the_beginning_right { width: 100%; }
+		#the_beginning_left { width: 100%; }
+		#contact_us_right { float: right; width: 100%; }
+		#contact_us_left { float: left; width: 100%; }
+		#contact_us_right { float: right; width: 100%;}
+		#contact_us_left_top { background-image: url("images/blue_bg.jpg"); float: left; min-height: 455px; position: relative; width: 50%; }
+		#contact_us_left_bottom { background-image: url("images/brown_bg.jpg"); float: right; min-height: 455px; position: relative; /*width: 50%*/; }
+		.hide { display: none; }
+		.show { display: block; }
+		#the_founder_image { height: auto; margin: 0 auto -4px; max-width: 526px; }
+		.hover_extra {
+			display: none;
+			margin: 0 auto!important;
+			padding: 0 !important;
+			position: relative;
+			width: 100%; cursor: pointer;
+		}
+		/*Stack testimonials on top of the brown box.*/
+
+		#contact_us_left_top {width: 100%;}
+		#contact_us_left-bottom {width: 100% !important;}
+
+		/*testimonial fills its container*/
+		#test {width: 90% !important;}
+
+	}
+
+	@media (max-width: 760px) {
+		#the_science_icon_container > div { width: 49%; border: 0px!important; }
+		#product_images_container > div {width: 49%; border: 0px!important;}
+
+		#the_science_icon_container { border: 0 none !important; }
+		#product_images_container {border:0 none !important;}
+
+		#social_icon_container { border-left: 0 none; }
+		#social_icon_container > div { border: 0 none; height: 46px !important; width: 46px !important; }
+		#social_icon_container img { margin: 42px auto; width: 24px; }
+		#email_lrg img { margin: 17px 0 0 !important; }
+		#yelp_lrg img { margin: 9px 0 0 !important; width: 24px; }
+		#instagram_lrg img { margin: 13px 0 0 !important; width: 24px; }
+		#social_icon_container img { margin: 4px auto; }
+		#facebook_lrg img { margin: 12px 0 0 !important; width: 14px !important; }
+		#twitter_lrg img { margin: 15px 0 0 !important; }
+		#youtube_lrg img { margin: 10px 0 0 !important; }
+		#social_icon_container { border: 0 none; width: 280px; }
+
+		.main_nav { display: block; }
+		.main_nav { height: 355px; }
+		.main_nav li { float: none; }
+		.main_nav #navigation { margin: 0 auto; width: 280px; }
+		.main_nav #logo_sm { margin: 0 auto; position: relative; }
+		.main_nav li p { margin: 0; }
+		.main_nav #logo { margin: 0 auto; }
+
+		.mobile_nav { display: block; top: 0!important;}
+		.mobile_nav li { float: none; }
+		.mobile_nav #navigation { margin: 0 auto!important; width: 280px; }
+		.mobile_nav #logo_sm { margin: 0 auto; position: relative; }
+		.mobile_nav li p { margin: 0; }
+		.mobile_nav { background-image: url("images/white_bg_new.jpg"); height: 245px; position: absolute; top: 0px; width: 100%; }
+
+		/*Prevent horizontal overflow*/
+		html, body{
+		width:100%;
+		overflow-x:hidden;
+		}
+
+		/*Center the testimonials in their div on mobile.*/
+		#test {
+			margin-top: 2em !important;
+			/*margin-left: 2em !important;*/
+			text-align: center;
+		}
+
+		/*Center the hover image in its container in mobile.*/
+		#product_images_container img {
+			width: 100%;
+		}
+		/*Footer fills container*/
+		.footer-container {
+			height: 91px;
+		}
+
+
+	}
+
+	@media (max-width: 560px) {
+		#the_science_icon_container > div { width: 100%; }
+		#product_images_container > div {width: 100%;}
+
+		p { max-width: 280px!important; margin: 0 auto!important; }
+		h2 { font-size: 50px; }
+		h1 { font-size: 20px; }
+		#contact_form { margin: 20px auto; max-width: 280px; position: relative; }
+		#the_science_icon_container > div { border: 0px!important; }
+		#product_images_container > div { border: 0px!important;}
+
+		#social_icon_container { border-left: 0 none; }
+		#social_icon_container > div { border: 0 none; height: 46px !important; width: 46px !important; }
+		#social_icon_container img { margin: 42px auto; width: 24px; }
+		#email_lrg img { margin: 17px 0 0 !important; }
+		#yelp_lrg img { margin: 9px 0 0 !important; width: 24px; }
+		#instagram_lrg img { margin: 13px 0 0 !important; width: 24px; }
+		#social_icon_container img { margin: 4px auto; }
+		#facebook_lrg img { margin: 12px 0 0 !important; width: 14px !important; }
+		#twitter_lrg img { margin: 15px 0 0 !important; }
+		#youtube_lrg img { margin: 10px 0 0 !important; }
+		#social_icon_container { border: 0 none; width: 280px; }
+		#copyright { float: none; margin: 0 auto; }
+		#ptp { float: none; margin: 0 auto 12px; }
+		#the_science_icon_container > div { float: none; margin: 0 auto; width: 100%; }
+		.hover_extra { display: none; margin: 0 auto!important; padding: 0 20px 0 0 !important; position: absolute; width: 100%; cursor: pointer; }
+		#contact_us_left_top p { color: #fff; font-size: 16px; line-height: 20px; max-width: 215px; opacity: 0.4; padding: 0; width: 100%; }
+
+		/*Prevent horizontal overflow*/
+		html, body{
+		width:100%;
+		overflow-x:hidden;
+		}
+
+		/*Center the testimonials in their div on mobile.*/
+		#test {
+			margin-top: 2em !important;
+			/*margin-left: -3em !important;*/
+			text-align: center;
+			max-width: 100% !important;
+			/*margin-left: 3em !important;*/
+		}
+	}
+	/**/
+
+	#hide-scroll {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	/*NOTE: Flexslider has its own CSS file. Additional styling below.*/
+  #test-box {
+   /*width: 96%;*/
+   padding: 2%;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   /*background: rgba(0,0,0,0.6);*/
+   color: #fff;
+   text-align: center;
+   text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+   font-size: 14px;
+   line-height: 18px;
+   margin:0;
+   text-transform: none;
+   min-width: 100% !important;
+
+  }
+
+/*Adding scroll bar to the testimonials div.*/
+  #test-holder {
+  	/*width: 50%;*/
+  	height: auto;
+  	overflow-y: auto;
+  	/*min-width: 100% !important;*/
+  	width: 100% !important;
+
+  }
+
+  #test{
+  	/*EDITS 5.25.16*/
+    /*color:#5c4033;*/
+    /*Consistent font-family with body text of site.*/
+    margin-top: 1em;
+    font-family: 'Cabin', sans-serif;
+    opacity:1.0;
+    position:absolute;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    /*margin-left: 100px;*/
+    /*margin-right: 100px;*/
+    width: 90%;
+    padding-left:2% !important;
+    padding-right:2% !important;
+    text-transform: none;
+  }
+
+  .test-author {
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+
+  /*Hide horizontal scroll/set max-width.*/
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*Footer fills its container.*/
+
+
+footer {
+	height: 100%;
+}
+
+/*iPad media queries for product images.*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+/* STYLES GO HERE */
+
+  /*On iPad, you want 2 by 2 by 2 (width ~= 48%) for best display.*/
+  #product_images_container > div {
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  /*Padding-left for the first nav item on iPad*/
+  #iPad-nav {
+    padding-left: 20% !important;
+  }
+
+  /*Hide horizontal overflow on iPad 06.08.16*/
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /*Make contact message box bigger*/
+  .contact_message {
+    width: 104%;
+  }
+
+  /*Scale down the welcome image banner on iPad = 0.9*/
+  #welcome_image {
+    transform: scale(0.9);
+  }
+  /*Give logo equal breathing room at top and bottom of nav bar.*/
+  #logo {
+    margin: 4px 0px 4px 0px;
+  }
+}
+
+/*Mobile product margins below:*/
+
+/*iPhone 6s*/
+@media only screen and (device-width: 414px) {
+
+  #product_images_container > div {
+    margin-bottom: -62px !important;
+  }
+}
+
+/*iPhone 6*/
+@media only screen and (device-width: 375px) {
+
+  #product_images_container > div {
+    margin-bottom: -107px !important;
+  }
+
+}
+
+/*Galaxy S5*/
+
+@media screen and (device-width: 360px) {
+
+  #product_images_container > div {
+    margin-bottom: -127px !important;
+  }
+
+}
+
+/*iPhone 5/5S*/
+
+@media only screen and (device-width: 320px) {
+
+  #product_images_container > div {
+
+    margin-bottom: -175px !important;
+  }
+}
+
+/*06.08.16 - increasing width of contact_message box on iPhone and smaller.*/
+
+@media only screen
+and (max-device-width : 767px)  {
+  .contact_message {
+    width: 105%;
+  }
+
+}
+
+
+
+
