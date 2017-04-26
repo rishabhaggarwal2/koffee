@@ -2,8 +2,6 @@ angular.module('finderApp', [])
   .controller('FinderController', function($scope) {
     var finder = this;
 
-    console.log(finder.locations);
-
     $.ajax({
         type: "GET",
         url: "locations.txt",
@@ -20,4 +18,5 @@ angular.module('finderApp', [])
       $scope.$apply();
       console.log(finder.locations);
     };
+
   });
