@@ -232,3 +232,13 @@ svg.honeyScience {
 .social__icons__container > div:hover img{
   transform: translateY(-15px);
 }
+
+g#water, g#cold, g#coconut, g#stevia, g#coffee {
+  transform-origin: center;
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+
+g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
+  transform:  scale(2);
+}
