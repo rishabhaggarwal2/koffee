@@ -37,7 +37,8 @@
     padding: 20px;
     margin: 1%;
     background: #eee;
-    box-shadow: 2px 2px 10px #ccc;
+    /* box-shadow: 2px 2px 10px #ccc; */
+    box-shadow: 0px 0px 10px #999;
 }
 
 .finder__location__name {
@@ -78,7 +79,7 @@ svg.honeyScience {
   max-width: 1024px;
   position: relative;
   margin: auto;
-  margin-top: 84px;
+  margin-top: 144px;
 }
 
 .science_section {
@@ -88,14 +89,14 @@ svg.honeyScience {
 #the_beginning {
   background-image: url(images/white_bg_new.jpg);
   margin-top: -22%;
-  padding-bottom: 80px;
+  padding-bottom: 0.75in;
 }
 
 #the_beginning_left {
   background: transparent !important;
   text-align: right;
   z-index: 2;
-  margin-top: -8%;
+  margin-top: -6%;
   min-height: auto !important;
 }
 
@@ -113,7 +114,7 @@ svg.honeyScience {
   background: transparent !important;
   text-align: right;
   z-index: 2;
-  margin-top: -28%;
+  margin-top: -26%;
   float: right !important;
   min-height: auto !important;
 }
@@ -131,6 +132,9 @@ svg.honeyScience {
 .new__testimonials h2 {
   opacity: 1.0;
   color: #5c4033;
+  width: 80%;
+  margin: auto;
+  text-align: right;
 }
 
 .testimonials__svg {
@@ -150,7 +154,7 @@ svg.honeyScience {
 .contact__container {
   position: relative;
   background-color: #0A0508;
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   color: #fff;
 }
 
@@ -197,7 +201,8 @@ svg.honeyScience {
   border-bottom: 1px dotted #ef9b43;
   border-left: 1px dotted #ef9b43;
   border-radius: 10px 0px 0px 10px;
-  color: #fff;
+  color: #333;
+  background:  #fff;
   box-sizing: border-box;
 }
 
@@ -241,4 +246,233 @@ g#water, g#cold, g#coconut, g#stevia, g#coffee {
 
 g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
   transform:  scale(2);
+}
+
+#welcome {
+  min-height: 800px;
+  background: url('images/temp/1.jpg') #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1px;
+}
+
+.splash {
+  padding: 1px;
+}
+
+.main_nav, header {
+  background: transparent !important;
+}
+
+#splash__navigation {
+  display: flex;
+}
+
+#splash__navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash__navigation #logo {
+  height: 150px;
+  width: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#splash__navigation ul li p {
+  margin: 0 !important;
+}
+
+.splash__text {
+  width: 50vw;
+  max-width: 512px;
+  margin: auto;
+  margin-top: 200px;
+  padding: 40px 0 200px 0;
+  text-align: center;
+}
+
+.splash__introline {
+  font-family: 'Cabin Sketch', cursive;
+  color: #fff;
+  font-weight: 900;
+}
+
+.splash__heading, .splash__heading__big {
+  opacity: 1;
+  color: #fff;
+  font-size: 90px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.splash__heading__big {
+  font-size: 138px;
+}
+
+.splash__tagline {
+  opacity: 0.8;
+  line-height: 1;
+  font-size: 40px;
+  color: #fff;
+}
+
+.splash__tagline::after {
+  content: 'STAY AWAKE.';
+  opacity: 0.0;
+  line-height: 1;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  left: 0;
+  transform: rotateX(180deg);
+}
+
+.main_nav ul a {
+  color: #fff !important;
+}
+
+.orange__benefits {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  max-width: 1024px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  padding-bottom: 60px;
+}
+
+.orange__benefits > div {
+  width: 50%;
+  max-width: 50%;
+}
+
+.orange__benefits li {
+  display: block;
+  width: 70%;
+  margin-left: 30%;
+  line-height: 2.5;
+  position: relative;
+}
+
+.orange__benefits li::before {
+  content: '';
+  height: 60px;
+  width: 60px;
+  background: url('images/bolt.svg');
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -13%;
+  top: -25%;
+}
+
+#products__container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 0px 20px 0px;
+}
+
+.products__product {
+  width: 12.5%;
+}
+
+.products__img {
+    width: 100%;
+    transition: 0.2s ease all;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.products__img:hover {
+  transform: scale(1.2);
+}
+
+.products__overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-size: contain !important; */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  z-index: 3 !important;
+  opacity: 1;
+}
+
+#products {
+  z-index: 3;
+}
+/* .products__overlay.opaque {
+  opacity: 1;
+  transition: all linear 2s;
+} */
+
+/* 32221a is dark brown */
+
+#why {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#why_newsletter p {
+  opacity: 0.8 !important;
+}
+
+#our_story h2, #our_story p {
+  color: #32221a !important;
+}
+
+.koffee__section h2 {
+  display: block;
+  margin-bottom: 60px;
+  opacity: 1;
+  color: #fff;
+}
+
+.koffee__section {
+  background: #4a8acb;
+  padding: 0.75in;
+}
+
+.products__overlay__description {
+  width: 400px;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 55%;
+  margin-top: 10%;
+}
+
+#the_founder {
+  background: #4a8acb !important;
+}
+
+#the_founder p {
+  margin-top: 0.25in;
+} 
+
+#the_founder_image {
+  margin-top: 0.5in;
+}
+
+@media (min-width: 1400px) {
+  
+
 }
