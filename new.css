@@ -101,7 +101,7 @@ svg.honeyScience {
 }
 
 .kickstarter__logo {
-  width: 240px;
+  width: 216px;
 }
 
 .beginning__originated {
@@ -134,7 +134,7 @@ svg.honeyScience {
   color: #5c4033;
   width: 80%;
   margin: auto;
-  text-align: right;
+  text-align: center;
 }
 
 .testimonials__svg {
@@ -286,8 +286,8 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
 }
 
 .splash__text {
-  width: 50vw;
-  max-width: 512px;
+  width: 80vw;
+  max-width: 800px;
   margin: auto;
   margin-top: 200px;
   padding: 40px 0 200px 0;
@@ -319,6 +319,7 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
   line-height: 1;
   font-size: 40px;
   color: #fff;
+  margin-top: 20px;
 }
 
 .splash__tagline::after {
@@ -360,7 +361,7 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
 .orange__benefits li {
   display: block;
   width: 70%;
-  margin-left: 30%;
+  margin-left: 40%;
   line-height: 2.5;
   position: relative;
 }
@@ -436,6 +437,15 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
   opacity: 0.8 !important;
 }
 
+#our_story {
+  min-height: auto;
+  padding-bottom: 80px;
+}
+
+#our_story h2 {
+  line-height: 1;
+}
+
 #our_story h2, #our_story p {
   color: #32221a !important;
 }
@@ -470,9 +480,122 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
 
 #the_founder_image {
   margin-top: 0.5in;
+  height: 214px !important;
 }
 
-@media (min-width: 1400px) {
-  
+#the_founder_image img {
+  width: 70%;
+}
 
+@media (max-width: 767px) {
+  .splash__introline {
+      font-size: 2em;
+  }
+
+  .splash__heading, .splash__heading__big {
+      font-size: 58px;
+      margin-top: 10px;
+  }
+
+  .splash__heading__mobile {
+    font-size: 87px;
+  }
+
+  .orange__benefits {
+    flex-direction: column;
+  }
+
+  .orange__benefits > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .orange__benefits li {
+    margin-left: 0;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .orange__benefits li::before {
+    left: -16%;
+    display: none;
+  }
+
+  #why {
+    padding: 40px 0;
+  }
+
+  #why_newsletter p {
+    margin-top: 10px !important;
+  }
+
+  #the_science .science__title {
+    margin-top: 20px;
+  }
+
+  .science__svg {
+    margin-top: 40px;
+  }
+
+  #the_beginning_left {
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+
+  .beginning__originated {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  #the_beginning_right {
+    margin-top: 20px;
+    float: none !important;
+    text-align: left;
+  }
+
+  #the_beginning_right p {
+    text-align: left;
+    padding: 0px !important;
+    margin: 10% !important;
+  }
+
+  #the_beginning {
+    padding-bottom: 0;
+  }
+
+  #the_founder_image {
+    height: auto !important;
+  }
+
+  .testimonials__svg {
+    margin-top: -12%;
+    width: 120%;
+    margin-left: -10%;
+  }
+
+  .contact__container::before {
+    top: -14%;
+  }
+
+  .contact__flex {
+    flex-direction: column;
+  }
+
+  .contact__signup input {
+    width: 61%;
+  }
+
+  .contact__signup .button {
+    width: 38%;
+  }
+
+  .koffee__section {
+      padding: 0.75in 20px;
+  }
+
+  .finder__location__container {
+    margin-right: 0px;
+  }
 }

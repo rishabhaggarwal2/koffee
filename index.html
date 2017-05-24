@@ -268,12 +268,12 @@
                   <div class="main_nav">
                       <div id="splash__navigation">
                           <ul>
-                              <li><p><a href="#our_story" id="iPad-nav" data-scroll data-options='{ "easing": "easeInQuint" }' >Kulture</a></p></li>
-                              <li><p><a href="#products" data-scroll data-options='{ "easing": "easeInQuint" }' >Products</a></p></li>
+                              <li><p><a href="#koffee__finder" id="iPad-nav" data-scroll data-options='{ "easing": "easeInQuint" }' >Koffee Finder</a></p></li>
+                              <li><p><a href="#the__products" data-scroll data-options='{ "easing": "easeInQuint" }' >Products</a></p></li>
                               <li><p><a href="#the_science" data-scroll data-options='{ "easing": "easeInQuint" }' >Science</a></p></li>
                               <li><a href="#welcome" data-scroll data-options='{ "easing": "easeInQuint" }' ><div id="logo"></div></a></li>
                               <li><p><a href="#the_beginning" data-scroll data-options='{ "easing": "easeInQuint" }' >Origin</a></p></li>
-                              <li><p><a href="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >Founder</a></p></li>
+                              <li><p><a href="#the_testimonial" data-scroll data-options='{ "easing": "easeInQuint" }' >Testimonial</a></p></li>
                               <li><p><a href="#contact_us" data-scroll data-options='{ "easing": "easeInQuint" }' >Kontact</a></p></li>
                           </ul>
                       </div>
@@ -292,12 +292,12 @@
 
                               <!-- Adding a close button -->
                   <li><p><a href="#" id = "close-x" onclick="$.sidr('close', 'sidr-main');return false;">X</a></p></li>
-                              <li><p><a href="#our_story" id="iPad-nav" data-scroll data-options='{ "easing": "easeInQuint" }' >Kulture</a></p></li>
-                              <li><p><a href="#products" data-scroll data-options='{ "easing": "easeInQuint" }' >Products</a></p></li>
+                              <li><p><a href="#koffee__finder" id="iPad-nav" data-scroll data-options='{ "easing": "easeInQuint" }' >Koffee Finder</a></p></li>
+                              <li><p><a href="#the__products" data-scroll data-options='{ "easing": "easeInQuint" }' >Products</a></p></li>
                               <li><p><a href="#the_science" data-scroll data-options='{ "easing": "easeInQuint" }' >Science</a></p></li>
                               <li><a href="#welcome" id ="logo-nav" data-scroll data-options='{ "easing": "easeInQuint" }' ><img id="sidr-logo" src="images/logo_sm_sm.jpg" alt = "Koffee Reinvented"></a></li>
                               <li><p><a href="#the_beginning" data-scroll data-options='{ "easing": "easeInQuint" }' >Origin</a></p></li>
-                              <li><p><a href="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >Founder</a></p></li>
+                              <li><p><a href="#the_testimonial" data-scroll data-options='{ "easing": "easeInQuint" }' >Testimonial</a></p></li>
                               <li><p><a href="#contact_us" data-scroll data-options='{ "easing": "easeInQuint" }' >Kontact</a></p></li>
                           </ul>
                 </div>
@@ -315,7 +315,7 @@
                               <li><p><a href="#the_science" data-scroll data-options='{ "easing": "easeInQuint" }' >Science</a></p></li>
                               <li><a href="#welcome" data-scroll data-options='{ "easing": "easeInQuint" }' ><div id="logo_sm"></div></a></li>
                               <li><p><a href="#the_beginning" data-scroll data-options='{ "easing": "easeInQuint" }' >Origin</a></p></li>
-                              <li><p><a href="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >Founder</a></p></li>
+                              <li><p><a href="#the_founder" data-scroll data-options='{ "easing": "easeInQuint" }' >Testimonial</a></p></li>
                               <li><p><a href="#contact_us" data-scroll data-options='{ "easing": "easeInQuint" }' >Kontact</a></p></li>
                           </ul>
                       </div>
@@ -329,8 +329,7 @@
             <div class="splash">
               <div class="splash__text">
                 <h3 class="splash__introline">Welcome to the</h3>
-                <h2 class="splash__heading">Future Of</h2>
-                <h2 class="splash__heading__big">Coffee</h2>
+                <h2 class="splash__heading">Future Of <span class="splash__heading__mobile">Koffee</span></h2>
                 <h2 class="splash__tagline">Stay Awake.</h2>
               </div>
             </div>
@@ -361,7 +360,7 @@
             <div id="why">
                 <!-- <div id="why_koffee_icon"></div> -->
                 <h1>Our Mission</h1>
-                <p>Our mission at Koffee Reinvented is to minimize all the negative side effects associated with standard Coffee, REINVENTING it into the health food nature intended it to be." We use only the highest quality, organic & fair-trade ingredients in our products. The Koffee Krew is on an innovative quest to make the world a happier, healthier place!</p>
+                <p>Our mission is to Reinvent coffee into the health food nature intended it to be. We achieve this with our unique brewing process and by using only the highest quality, organic & fair-trade ingredients on earth. We pride ourselves as an entirely plant-based & sugar-free company. The Koffee Krew is on a innovate quest to make the wold a happier, healthier place</p>
                 <p>         </span></p>
 
                 <div id="learn_more"></div>
@@ -382,7 +381,7 @@
         <div style="clear: both;"></div>
 
         <div id="products">
-          <div class="koffee__section">
+          <div class="koffee__section" id="koffee__finder">
             <h2>Koffee Finder</h2>
             <div>
               <div ng-controller="FinderController as finder" class="Finder">
@@ -430,7 +429,7 @@
                     <p>{{products.active.description}}</p>
                   </div>
                 </div>
-                <div id="products__container">
+                <div id="products__container" id="the__products">
                   <div 
                     class="products__product"
                     ng-repeat="product in products.products">
@@ -449,7 +448,9 @@
         <div id="the_science">
             <h2 class="science__title">Science</h2>
             <div class="science_section">
-              <div ng-include="'images/HoneyScience.svg'"></div>
+              <div 
+                class="science__svg" 
+                ng-include="'images/HoneyScience.svg'"></div>
             </div>
         </div>
         <div style="clear: both;"></div>
@@ -480,7 +481,7 @@
         </div>
         -->
         <div style="clear: both;"></div>
-        <div class="new__testimonials">
+        <div class="new__testimonials" id="the_testimonial">
             <h2>Testimonials</h2>
             <div class="testimonials__svg" ng-include="'images/testimonials.svg'"></div>
         </div>
