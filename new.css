@@ -487,6 +487,14 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
   width: 70%;
 }
 
+video.splash__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 @media (max-width: 767px) {
   .splash__introline {
       font-size: 2em;
