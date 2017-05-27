@@ -404,10 +404,13 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
   max-width: 1200px;
   margin: auto;
   padding: 0px 0px 20px 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .products__product {
   width: 12.5%;
+  padding: 0 2.5%;
 }
 
 .products__img {
@@ -639,5 +642,9 @@ g#water:hover, g#cold:hover, g#coconut:hover, g#stevia:hover, g#coffee:hover {
     padding: 1px;
     width: 100%;
     position: relative;
+  }
+
+  .products__product {
+    width: 25%;
   }
 }
