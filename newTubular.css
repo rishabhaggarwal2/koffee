@@ -91,8 +91,9 @@ svg.honeyScience {
 }
 
 #the_beginning {
-  background-image: url(images/white_bg_new.jpg);
-  margin-top: -22%;
+  /* background-image: url(images/white_bg_new.jpg); */
+  background:  transparent;
+  margin-top: -1%;
   padding-bottom: 0.75in;
 }
 
@@ -131,6 +132,11 @@ svg.honeyScience {
   background-image: url(images/white_bg_new.jpg);
   padding: 80px 0;
   padding-bottom: 15%;
+  z-index: 2;
+}
+
+#the_testimonial {
+  z-index: 2;
 }
 
 .new__testimonials h2 {
@@ -143,6 +149,10 @@ svg.honeyScience {
 
 .testimonials__svg {
   margin-top: -12%;
+}
+
+#the_founder {
+  z-index: 2;
 }
 
 .contact__container::before {
@@ -160,6 +170,7 @@ svg.honeyScience {
   background-color: #0A0508;
   padding: 0 0 80px 0;
   color: #fff;
+  z-index: 2;
 }
 
 .contact__container a{

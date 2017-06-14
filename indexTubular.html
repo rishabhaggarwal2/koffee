@@ -35,7 +35,7 @@
 
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="new.css">
+        <link rel="stylesheet" href="newTubular.css">
         <!-- Sticky JS script 06.14.16 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.js
 "></script>
@@ -330,7 +330,7 @@
               <!-- <video class="splash__video" playsinline="true" autoplay="true" muted="true" loop="true">
                 <source src="videos/KoffeeSplashLow.mp4" type="video/mp4">
               </video> -->
-                <iframe class="splash__video" width="1920" height="1080" src="http://www.youtube.com/embed/IsBInsOj8TY?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IsBInsOj8TY" frameborder="0"></iframe>
+              <!--   <iframe class="splash__video" width="1920" height="1080" src="http://www.youtube.com/embed/IsBInsOj8TY?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IsBInsOj8TY" frameborder="0"></iframe> -->
               <div class="splash__text">
                 <h3 class="splash__introline">Welcome to the</h3>
                 <h2 class="splash__heading">Future Of <span class="splash__heading__mobile">Koffee</span></h2>
@@ -460,19 +460,19 @@
                 class="science__svg" 
                 ng-include="'images/HoneyScience.svg'"></div>
             </div>
-        </div>
-        <div style="clear: both;"></div>
 
-        <div id="the_beginning">
-            <div id="the_beginning_left">
-                <img class="kickstarter__logo" src = "images/kickstarter.png">
-                <h3 class="beginning__originated">Originated</h3>
+            <div id="the_beginning">
+                <div id="the_beginning_left">
+                    <img class="kickstarter__logo" src = "images/kickstarter.png">
+                    <h3 class="beginning__originated">Originated</h3>
+                </div>
+                <div id="the_beginning_right">
+                    <p>Koffee’s initial startup was successfully funded in November of 2014 through the popular crowd funding site; Kickstarter. 100 individuals collectively put together $30,000 in 30 days, proving that there is a strong desire for a healthier coffee. <strong>Koffee</strong> concentrates its rich flavor in an 8.5 ounce espresso style sipper. Koffee Reinvented is just the first in a series of healthy innovative beverages we plan to bring to the market.</p>
+                    <br><br><br><br>
+                </div>
+                <div style="clear: both;"></div>
             </div>
-            <div id="the_beginning_right">
-                <p>Koffee’s initial startup was successfully funded in November of 2014 through the popular crowd funding site; Kickstarter. 100 individuals collectively put together $30,000 in 30 days, proving that there is a strong desire for a healthier coffee. <strong>Koffee</strong> concentrates its rich flavor in an 8.5 ounce espresso style sipper. Koffee Reinvented is just the first in a series of healthy innovative beverages we plan to bring to the market.</p>
-                <br><br><br><br>
-            </div>
-            <div style="clear: both;"></div>
+            
         </div>
         <div style="clear: both;"></div>
         <div id="the_founder">
@@ -722,9 +722,15 @@
 
 <!-- Integrating TouchSwipe JS library for swipe to open/close on mobile 06.14.16 -->
 <script src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.13/jquery.touchSwipe.min.js"></script>
-
+<script type="text/javascript" src="jquery.tubular.1.0.js"></script>
 <!-- Scroll window: fix the mobile-nav sidr menu -->
 <script>
+$(document).ready(function(){
+  $('body').tubular({
+    videoId: 'IsBInsOj8TY',
+  });
+});
+     // where idOfYourVideo is the YouTube ID. });
 // $(function() {
 
     // var $sidebar   = $("#sidr-main"),

@@ -1,6 +1,7 @@
 angular.module('finderApp', [])
   .controller('FinderController', function($scope) {
     var finder = this;
+    finder.filter = 6;
 
     $.ajax({
         type: "GET",
