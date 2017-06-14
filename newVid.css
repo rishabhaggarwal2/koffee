@@ -549,8 +549,13 @@ video {
 }
 
 @media (max-width: 767px) {
-  .splash__video {
+  .splash__video, .videoContainer__video {
     display: none;
+  }
+
+  .videoContainer {
+    background: url('images/phoneSplash.jpg') center center;
+    background-size: cover;
   }
 
   .splash__introline {
