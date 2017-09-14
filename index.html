@@ -332,7 +332,7 @@
               </video> -->
               <iframe class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IsBInsOj8TY?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IsBInsOj8TY" frameborder="0"></iframe>
             </div>
-            
+
             <div class="splash">
               <!-- <video class="splash__video" playsinline="true" autoplay="true" muted="true" loop="true">
                 <source src="videos/KoffeeSplashLow.mp4" type="video/mp4">
@@ -370,7 +370,7 @@
             <div id="why">
                 <!-- <div id="why_koffee_icon"></div> -->
                 <h1>Our Mission</h1>
-                <p>Our mission is to Reinvent coffee into the health food nature intended it to be. We achieve this with our unique brewing process and by using only the highest quality, organic & fair-trade ingredients on earth. We pride ourselves as an entirely plant-based & sugar-free company. The Koffee Krew is on a innovate quest to make the wold a happier, healthier place</p>
+                <p>Our mission is to Reinvent coffee into the health food nature intended it to be. We achieve this with our unique brewing process and by using only the highest quality, organic & fair-trade ingredients on earth. We pride ourselves as an entirely plant-based & sugar-free company. The Koffee Krew is on a innovative quest to make the wold a happier, healthier place</p>
                 <p>         </span></p>
 
                 <div id="learn_more"></div>
@@ -459,12 +459,21 @@
         <div style="clear: both;"></div>
 
         <!-- The Science, under Products -->
-        <div id="the_science">
+        <div id="the_science" ng-controller="ScienceController as sciencey">
             <h2 class="science__title">Science</h2>
             <div class="science_section">
               <div 
-                class="science__svg" 
-                ng-include="'images/HoneyScience.svg'"></div>
+                ng-class="{'hidden': sciencey.overlay, 'science__svg': true}" 
+                ng-include="'images/HoneyScience.svg'"
+                onload="sciencey.activate()"></div>
+              <div
+                class="science__overlay"
+                ng-show="sciencey.overlay"
+                ng-click="sciencey.overlay = 0">
+                <!-- <img ng-src="{{sciencey.activeFact.img}}" /> -->
+                <h4>{{sciencey.activeFact.name}}</h4>
+                <p>{{sciencey.activeFact.fact}}</p>
+              </div>
             </div>
         </div>
         <div style="clear: both;"></div>
@@ -507,7 +516,7 @@
               <div class="contact__info">
                 <div id="lets_talk_icon"></div>
                 <h1>Let's Talk</h1>
-                <h3>323-510-8841</h3>
+                <h3>323.597.0087</h3>
               </div>
               <div class="contact__info">
                 <div id="send_a_message_icon"></div>
