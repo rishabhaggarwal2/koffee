@@ -17,7 +17,7 @@ angular.module('finderApp', [])
       $scope.$apply();
       finder.search = "";
       $scope.$apply();
-      console.log(finder.locations);
+      // console.log(finder.locations);
     };
 
     
@@ -27,15 +27,15 @@ angular.module('finderApp', [])
     var sciencey = this;
     sciencey.overlay = 0;
     sciencey.facts = {
-      stevia: {
-        name: 'Sugar Free Stevia Plant',
-        img: 'images/science/stevia.svg',
-        fact: 'Stevia is a sugar-free herbal sweetener that does not spike blood sugar levels, making it Diabetic friendly. It has no sugar, calories, carbs which promotes weight loss! Our partner, SweetLeaf t is the global leader in the organic liquid stevia industry, with awards to show for it. We use ONLY the best! Because we love you! And sugar doesn\'t!'
+      stomach: {
+        name: 'Stomach Friendly',
+        img: 'images/science/stomach.svg',
+        fact: 'According to the National Heartburn Alliance, of the estimated 54 million Americans that suffer from heartburn/stomach acid reflux, 75% say Coffee causes it!'
       },
-      coconut: {
-        name: 'Coconut Oil',
-        img: 'images/science/coconut.svg',
-        fact: 'Added coconut oil'
+      teeth: {
+        name: 'More Teeth Friendly',
+        img: 'images/science/teeth.svg',
+        fact: 'Acidic coffee can ware the enamel from teeth, weakening them and wearing them down. By drinking a less acidic coffee, it make it overall easier on the teeth! We got to protect that beautiful smile of yours!'
       },
       hpp: {
         name: 'High Pressure Pasteurization',
@@ -50,12 +50,12 @@ angular.module('finderApp', [])
       water: {
         name: 'Alkaline Water',
         img: 'images/science/water.svg',
-        fact: 'Alkaline water is produced through a process called electrolysis. .The water molecules are broken down into smaller particles, also known as "micro-clustering." It tends to hydrate more effectively, especially for athletes. Alkaline water actually flushes lactic acid from the muscles, speeding up the recovery process for anyone who is physically active. Athletes truly do feel a difference with Koffee Reinvented.'
+        fact: 'Alkaline water tends to hydrate more effectively, especially for athletes. Alkaline water actually flushes lactic acid from the muscles, speeding up the recovery process for anyone who is physically active. Athletes truly do feel a difference with Koffee Reinvented.'
       },
-      tyent: {
-        name: 'TYENT USA',
-        img: 'images/science/tyent.svg',
-        fact: 'Our alkaline water partner is Tyent U.S.A., which was Established in 2004 by Joe Boccuti, Tyent quickly rose to be the top pick in the alkaline water machine industry. In an industry analysis, they took the top spot in every category, from quality of machine, to performance, aesthetics & even customer service. GO TYENT!!! We are honored to have you on our team!'
+      workout: {
+        name: 'Perfect Pre Workout',
+        img: 'images/science/workout.svg',
+        fact: 'Alkaline Water is said to flush lactic acid from the muscles, making it increase the recovery time after workouts. Workout out also can create an acidic body, which means adding more acidic coffee or a jittery pre-workout energy drink can cause problems in the body. Athletes & fitness enthusiasts choose Koffee Reinvented without a doubt!'
       },
       krash: {
         name: 'Less/No Krash',
@@ -70,7 +70,7 @@ angular.module('finderApp', [])
       kaffeine: {
         name: 'Kaffeine Kontent',
         img: 'images/science/kaffeine.svg',
-        fact: 'Koffee Reinvented contains 150 Mg of Caffeine. Scientific studies have proven that caffeine increases energy, focus & concentration. It also boosts memory function & promotes weight loss by boosting the metabolism. Can you please pass the Caffeine!?!?'
+        fact: 'Koffee Reinvented contains between 180 - 200 mg caffeine per bottle. Scientific studies have proven that caffeine increases energy, focus & concentration. It also boosts memory function & promotes weight loss by boosting the metabolism. Can you please pass the Caffeine!?!?'
       },
       monk: {
         name: 'Sugar Free Monk Fruit',
@@ -93,9 +93,9 @@ angular.module('finderApp', [])
         fact: 'Fair-trade coffee empowers farmers to get a fair price for their harvest, helps create safe working conditions & also provides decent wages. This results is that farmers are able to feed their families, keep them healthy, keep their kids in school & plan for their future. It also supports the local economy & the natural environment.'
       },
       vegan: {
-        name: 'Vegan Certified Beans',
+        name: 'Vegan Certified',
         img: 'images/science/vegan.svg',
-        fact: 'Koffee Reinvented is a certified Vegan product & also an entirely plant-based company. Our ingredients contain no animal flesh or any of their by-products, including ALL dairy,  eggs & none of the very controversial honey. WE LOVE ANIMALS so much that we make sure not to supporter and/or promote ANY such cruelty or inhumane treatment to them! We believe we are at a time in the world where this education is crucial for more than 100 reasons.'
+        fact: 'Koffee Reinvented is a certified Vegan product & also an entirely plant-based company. Our ingredients contain no animal flesh or any of their by-products, including ALL dairy,  eggs & none of the very controversial honey. WE LOVE ANIMALS so much that we make sure not to supporter and/or promote ANY such cruelty or inhumane treatment to them! We believe that this message is more important to share than ever before in history!'
       },
       gmo: {
         name: 'Non GMO Ingredients',
@@ -116,26 +116,39 @@ angular.module('finderApp', [])
         name: 'Vanilla Bean',
         img: 'images/science/vanilla.svg',
         fact: 'The Vanilla Bean promotes a healthy digestive process by soothing inflammation in the gut. Vanilla is also rich in antioxidants &  lowers has even been said to lower cholesterol levels. Our Vanilla bean flavor is sweetened with a Sugar-Free Monk Fruit creating a one of a the smoothest flavors to ever hit your tongue!'
+      },
+      rose: {
+        name: 'Rose Nectar',
+        img: 'images/science/rose.svg',
+        fact: 'Rose water is said to have anti-aging properties, because it hydrates the skin from inside when consumed. It also acts as a stress reliever, which can enhance the mood. When a person is less stressed, they also tend to heal more rapidly. You do the math. Stomach Friendly + Rose Nectar = NEXT LEVEL COFFEE!'
       }
     };
 
     sciencey.activate = function() {
       sciencey.svg = document.querySelector("svg");
       Object.keys(sciencey.facts).forEach(function(elem) {
-        console.log(elem);
+        // console.log(elem);
+        // console.log(elem);
         document.getElementById(elem).addEventListener("mouseenter", function(e) {
             sciencey.svg.appendChild(e.target);
         });
 
         document.getElementById(elem).addEventListener("click", function(e) {
             sciencey.activeFact = sciencey.facts[elem];
-            console.log(sciencey.facts[elem]);
+            // console.log(sciencey.facts[elem]);
             sciencey.overlay = 1;
             $scope.$apply();
+            e.stopPropagation();
         });
 
       });
 
+      window.addEventListener("click", function() {
+        if (sciencey.overlay === 1) {
+          sciencey.overlay = 0;
+          $scope.$apply();
+        }
+      });
     }
     
   })
@@ -148,6 +161,7 @@ angular.module('finderApp', [])
         image: 'jet_blak.png',
         available: true,
         banner: 'jet_blak_large.jpg',
+        bannerSmall: 'jet_blak_small.jpg',
         description: 'Our unique blend of all organic, fair-trade & shade grown coffee beans roasted to perfection and cold-brewed in a highly purified alkaline water.'
       },
       2: {
@@ -155,6 +169,7 @@ angular.module('finderApp', [])
         image: 'blak_chocolate.png',
         available: true,
         banner: 'blak_chocolate_large.jpg',
+        bannerSmall: 'blak_chocolate_small.jpg',
         description: 'Our Jet Blak Koffee topped  with all natural essence of cacao & sweetened with a 100% all natural, non-artificial sugar-free sweeteners.'
       },
       3: {
@@ -162,6 +177,7 @@ angular.module('finderApp', [])
         image: 'vanilla_bean.png',
         available: false,
         banner: 'vanilla_bean_large.jpg',
+        bannerSmall: 'vanilla_bean_small.jpg',
         description: 'Our Jet Blak Koffee topped with an organic vanilla extract & sweetened with a 100% all natural, non-artificial sugar-free sweeteners.'
       },
       // 4: {
@@ -192,13 +208,14 @@ angular.module('finderApp', [])
       //   banner: 'blue_chamomoile_large.jpg',
       //   description: 'Our Jet BlaK Koffee brewed w/Chamomile flowers, a natural hazelnut extract & sweetened with a 100% all natural, non-artificial sugar-free sweeteners.'
       // },
-      // 8: {
-      //   name: 'Blak Rose',
-      //   image: 'blak_rose.png',
-      //   available: false,
-      //   banner: 'blak_rose_large.jpg',
-      //   description: 'Our Vanilla Bean Koffee mixed with a High Vibration Bulgarian Rose Water.'
-      // }
+      4: {
+        name: 'Blak Rose',
+        image: 'blak_rose.png',
+        available: false,
+        banner: 'blak_rose_large.jpg',
+        bannerSmall: 'blak_rose_small.jpg',
+        description: 'Our Vanilla Bean Koffee mixed with a High Vibration Bulgarian Rose Water.'
+      }
     };
     products.overlay = 0;
 
@@ -206,6 +223,9 @@ angular.module('finderApp', [])
       products.overlay = 1;
       products.active = product;
       var background = "url('images/products/" + product.banner + "') #fff";
+      if(window.innerWidth <= 767) {
+        background = "url('images/products/" + product.bannerSmall + "') #fff";
+      }
       $(".products__overlay").css("background", background);
       $(".products__overlay").fadeIn();
     };

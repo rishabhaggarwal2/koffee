@@ -1,30 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="36px" height="68px" viewBox="0 0 36 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 24</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="1.1782703e-15 30.1841775 1.1782703e-15 0.0002 27.7299995 0.0002 27.7299995 30.1841775 0 30.1841775"></polygon>
-        <polygon id="path-3" points="4.85350232 16.4111172 0 16.4111172 15.6004003 40.2116767 9.71000434 24.0923296 15.6004003 23.5733828 0 0.000799917977"></polygon>
-    </defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD-Copy-6" transform="translate(-831.000000, -777.000000)">
-            <g id="Group-19" transform="translate(357.000000, 789.000000)">
-                <g id="Group-18-Copy-3" transform="translate(480.000000, 0.000000)">
-                    <g id="Group-24">
-                        <g id="Page-1" transform="translate(0.000000, 24.000000)">
-                            <mask id="mask-2" fill="white">
-                                <use xlink:href="#path-1"></use>
-                            </mask>
-                            <use id="Clip-2" stroke="#FFFFFF" stroke-width="3" xlink:href="#path-1"></use>
-                        </g>
-                        <g id="Page-1">
-                            <use fill="#62A7D6" fill-rule="evenodd" xlink:href="#path-3"></use>
-                            <path stroke="#000000" stroke-width="2" d="M3.51492315,15.4111172 L0,15.4111172 L-1.85113601,15.4111172 L-0.836349477,16.9593138 L14.7640509,40.7598733 L19.5129129,48.0049165 L16.5396533,39.8684511 L11.0968708,24.9740193 L15.6881609,24.5695244 L17.3612586,24.4221237 L16.4343179,23.0214938 L0.833917602,-0.55108905 L-2.85431473,-6.12409746 L-0.958938285,0.284414738 L3.51492315,15.4111172 Z"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36 68" style="enable-background:new 0 0 36 68;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;}
+	.st1{fill:#00AEEF;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;}
+</style>
+<title>Group 24</title>
+<desc>Created with Sketch.</desc>
+<g id="Welcome">
+	<g id="Desktop-HD-Copy-6" transform="translate(-831.000000, -777.000000)">
+		<g id="Group-19" transform="translate(357.000000, 789.000000)">
+			<g id="Group-18-Copy-3" transform="translate(480.000000, 0.000000)">
+				<g id="Group-24">
+					<g id="Page-1" transform="translate(0.000000, 24.000000)">
+						<g id="Clip-2">
+							<polygon id="path-1_1_" class="st0" points="0,30.2 0,0 27.7,0 27.7,30.2 							"/>
+						</g>
+					</g>
+					<g id="Page-1_1_">
+						<g>
+							<polygon id="path-3" class="st1" points="4.9,16.4 0,16.4 15.6,40.2 9.7,24.1 15.6,23.6 0,0 							"/>
+						</g>
+						<path class="st2" d="M3.5,15.4H0h-1.9l1,1.5l15.6,23.8l4.7,7.2l-3-8.1L11.1,25l4.6-0.4l1.7-0.1L16.4,23L0.8-0.6l-3.7-5.6
+							L-1,0.3L3.5,15.4z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

@@ -116,7 +116,8 @@
 	p { padding: 0 20px; text-align: center; margin: 0 auto; line-height: 33px; font-weight: 400; }
 	ul { font-family: 'Cabin Sketch', cursive; color: #3c2415; font-size: 27px; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; }
 	.main_nav { width: 100%; }
-	.main_nav ul a { opacity: 1; font-family: 'Cabin Sketch', cursive; color: #5c4033; font-size: 21px; font-weight: 700; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; text-decoration: none; }
+	/* .main_nav ul a { opacity: 1; font-family: 'Cabin Sketch', cursive; color: #5c4033; font-size: 21px; font-weight: 700; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; text-decoration: none; } */
+  .main_nav ul a { opacity: 1; font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; color: #5c4033; font-size: 19px; font-weight: 700; text-transform: uppercase; padding: 0px; width: 100%; max-width: 1053px; margin: 0 auto; text-decoration: none; }
 	.main_nav ul a:hover { border-bottom: 8px solid #ffa800; opacity: 1!important; }
 
 	/*new: edited padding (horizontal) to be 15px (it was 0px) to offset less nav text (Fri., 5/20/16)*/
